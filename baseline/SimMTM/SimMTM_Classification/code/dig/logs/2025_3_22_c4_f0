@@ -1,0 +1,2577 @@
+nohup: ignoring input
+Label to index mapping:
+{'NORM': 0, 'LAFB/LPFB': 1, 'IRBBB': 2, 'ILBBB': 3, 'CLBBB': 4, 'CRBBB': 5, '_AVB': 6, 'IVCD': 7, 'WPW': 8, 'LVH': 9, 'RVH': 10, 'LAO/LAE': 11, 'RAO/RAE': 12, 'SEHYP': 13, 'AMI': 14, 'IMI': 15, 'LMI': 16, 'PMI': 17, 'ISCA': 18, 'ISCI': 19, 'ISC_': 20, 'STTC': 21, 'NST_': 22}
+删除train中缺失label的数量:334
+(17084, 12, 1000)
+torch.Size([17084, 23])
+删除val中缺失label的数量:37
+(2146, 12, 1000)
+torch.Size([2146, 23])
+(2173, 1000, 12)
+torch.Size([2173, 23])
+=============================================
+Pre-training Dataset: SleepEEG
+Target (fine-tuning) Dataset: Epilepsy
+Seed: 40
+Method:  SimMTM
+Mode:    pre_train
+Pretrain Learning rate:    0.0001
+Masking ratio:    0.5
+Pretrain Epochs:    10
+Finetune Learning rate:    0.0001
+Finetune Epochs:    300
+Temperature: 0.2
+=============================================
+Pre-training started ....
+Pre-training Epoch: 1	 Train Loss: 4.7415	 CL Loss: 6.6267	 RB Loss: 0.3449
+
+Pre-training Epoch: 2	 Train Loss: 3.9168	 CL Loss: 5.3974	 RB Loss: 0.3165
+
+Fine-tuning started ....
+F1_macro_finetune:0.1052405328595186
+F1_macro_finetune:0.07570674037588361
+F1_macro_finetune:0.07930315965334303
+F1_macro_finetune:0.0930786626222323
+F1_macro_finetune:0.11217404300220216
+EP5 - Better Testing:  F1 = 0.1122
+
+Epoch : 5	 | 	  finetune Loss: 0.0574	 | 	Acc: 0.0000	 | 	F1: 0.1122
+F1_macro_test:0.05745692917382986
+F1_macro_finetune:0.12057546249140592
+EP6 - Better Testing:  F1 = 0.1206
+F1_macro_finetune:0.14382055136687252
+EP7 - Better Testing:  F1 = 0.1438
+F1_macro_finetune:0.15243767748674122
+EP8 - Better Testing:  F1 = 0.1524
+F1_macro_finetune:0.15588748715270573
+EP9 - Better Testing:  F1 = 0.1559
+F1_macro_finetune:0.16090569251115036
+EP10 - Better Testing:  F1 = 0.1609
+
+Epoch : 10	 | 	  finetune Loss: 0.0474	 | 	Acc: 0.0000	 | 	F1: 0.1609
+F1_macro_test:0.0815322982046634
+EP10 - Better Testing: Acc=0.0000| Precision = 0.0000 | Recall = 0.0000 | F1 = 0.0815
+F1_macro_finetune:0.1628410865174761
+EP11 - Better Testing:  F1 = 0.1628
+F1_macro_finetune:0.16728339878827753
+EP12 - Better Testing:  F1 = 0.1673
+F1_macro_finetune:0.1731782098001941
+EP13 - Better Testing:  F1 = 0.1732
+F1_macro_finetune:0.17435532132637252
+EP14 - Better Testing:  F1 = 0.1744
+F1_macro_finetune:0.18003443548143097
+EP15 - Better Testing:  F1 = 0.1800
+
+Epoch : 15	 | 	  finetune Loss: 0.0432	 | 	Acc: 0.0000	 | 	F1: 0.1800
+F1_macro_test:0.08132424654402133
+F1_macro_finetune:0.18111582019017627
+EP16 - Better Testing:  F1 = 0.1811
+F1_macro_finetune:0.1837776674151293
+EP17 - Better Testing:  F1 = 0.1838
+F1_macro_finetune:0.1877231346039048
+EP18 - Better Testing:  F1 = 0.1877
+F1_macro_finetune:0.18364310860577285
+F1_macro_finetune:0.19593818904932397
+EP20 - Better Testing:  F1 = 0.1959
+
+Epoch : 20	 | 	  finetune Loss: 0.0410	 | 	Acc: 0.0000	 | 	F1: 0.1959
+F1_macro_test:0.08360029850727964
+EP20 - Better Testing: Acc=0.0000| Precision = 0.0000 | Recall = 0.0000 | F1 = 0.0836
+F1_macro_finetune:0.20542439994876244
+EP21 - Better Testing:  F1 = 0.2054
+F1_macro_finetune:0.2042631000563156
+F1_macro_finetune:0.21995651674102384
+EP23 - Better Testing:  F1 = 0.2200
+F1_macro_finetune:0.20415370812154587
+F1_macro_finetune:0.20660586326670985
+
+Epoch : 25	 | 	  finetune Loss: 0.0393	 | 	Acc: 0.0000	 | 	F1: 0.2066
+F1_macro_test:0.08207804468479764
+F1_macro_finetune:0.21221037523857364
+F1_macro_finetune:0.21919722838731734
+F1_macro_finetune:0.239001499614796
+EP28 - Better Testing:  F1 = 0.2390
+F1_macro_finetune:0.21756340277913802
+F1_macro_finetune:0.24120516643797285
+EP30 - Better Testing:  F1 = 0.2412
+
+Epoch : 30	 | 	  finetune Loss: 0.0379	 | 	Acc: 0.0000	 | 	F1: 0.2412
+F1_macro_test:0.07507551703141065
+F1_macro_finetune:0.24722585338323672
+EP31 - Better Testing:  F1 = 0.2472
+F1_macro_finetune:0.2570953553042369
+EP32 - Better Testing:  F1 = 0.2571
+F1_macro_finetune:0.23920172771759696
+F1_macro_finetune:0.24514145866040157
+F1_macro_finetune:0.24748107985488774
+
+Epoch : 35	 | 	  finetune Loss: 0.0366	 | 	Acc: 0.0000	 | 	F1: 0.2475
+F1_macro_test:0.07266448569479776
+F1_macro_finetune:0.25771785132507585
+EP36 - Better Testing:  F1 = 0.2577
+F1_macro_finetune:0.2592196698403816
+EP37 - Better Testing:  F1 = 0.2592
+F1_macro_finetune:0.2586596848356684
+F1_macro_finetune:0.2606503485364584
+EP39 - Better Testing:  F1 = 0.2607
+F1_macro_finetune:0.2771621403888587
+EP40 - Better Testing:  F1 = 0.2772
+
+Epoch : 40	 | 	  finetune Loss: 0.0352	 | 	Acc: 0.0000	 | 	F1: 0.2772
+F1_macro_test:0.07141571816673621
+F1_macro_finetune:0.26679425937739426
+F1_macro_finetune:0.2771472228210073
+F1_macro_finetune:0.2911919291721636
+EP43 - Better Testing:  F1 = 0.2912
+F1_macro_finetune:0.2788872679652594
+F1_macro_finetune:0.27849315475275105
+
+Epoch : 45	 | 	  finetune Loss: 0.0340	 | 	Acc: 0.0000	 | 	F1: 0.2785
+F1_macro_test:0.07313566397041657
+F1_macro_finetune:0.28355261839294155
+F1_macro_finetune:0.28715281682867
+F1_macro_finetune:0.28628822255900493
+F1_macro_finetune:0.3126222847974777
+EP49 - Better Testing:  F1 = 0.3126
+F1_macro_finetune:0.30746345841362943
+
+Epoch : 50	 | 	  finetune Loss: 0.0328	 | 	Acc: 0.0000	 | 	F1: 0.3075
+F1_macro_test:0.07141555521620924
+F1_macro_finetune:0.30487102573932245
+F1_macro_finetune:0.3106946607828374
+F1_macro_finetune:0.325193670989825
+EP53 - Better Testing:  F1 = 0.3252
+F1_macro_finetune:0.33756120501241077
+EP54 - Better Testing:  F1 = 0.3376
+F1_macro_finetune:0.33294870390983505
+
+Epoch : 55	 | 	  finetune Loss: 0.0317	 | 	Acc: 0.0000	 | 	F1: 0.3329
+F1_macro_test:0.0695206758696604
+F1_macro_finetune:0.3232426278915734
+F1_macro_finetune:0.33366372652360793
+F1_macro_finetune:0.31401818491038486
+F1_macro_finetune:0.32257680062106436
+F1_macro_finetune:0.3474293254117843
+EP60 - Better Testing:  F1 = 0.3474
+
+Epoch : 60	 | 	  finetune Loss: 0.0306	 | 	Acc: 0.0000	 | 	F1: 0.3474
+F1_macro_test:0.06230665901989914
+F1_macro_finetune:0.3442674912564553
+F1_macro_finetune:0.3618864828759397
+EP62 - Better Testing:  F1 = 0.3619
+F1_macro_finetune:0.3826049390646137
+EP63 - Better Testing:  F1 = 0.3826
+F1_macro_finetune:0.37735706152280135
+F1_macro_finetune:0.3742755118497345
+
+Epoch : 65	 | 	  finetune Loss: 0.0293	 | 	Acc: 0.0000	 | 	F1: 0.3743
+F1_macro_test:0.060901000312855565
+F1_macro_finetune:0.3731542576883848
+F1_macro_finetune:0.34249983399158024
+F1_macro_finetune:0.36263753045388286
+F1_macro_finetune:0.35887214274023177
+F1_macro_finetune:0.3985837580951444
+EP70 - Better Testing:  F1 = 0.3986
+
+Epoch : 70	 | 	  finetune Loss: 0.0280	 | 	Acc: 0.0000	 | 	F1: 0.3986
+F1_macro_test:0.06517293989516104
+F1_macro_finetune:0.39574452484358524
+F1_macro_finetune:0.39380448410736163
+F1_macro_finetune:0.3963854076995147
+F1_macro_finetune:0.40552333736951496
+EP74 - Better Testing:  F1 = 0.4055
+F1_macro_finetune:0.3755257113179642
+
+Epoch : 75	 | 	  finetune Loss: 0.0269	 | 	Acc: 0.0000	 | 	F1: 0.3755
+F1_macro_test:0.061918365165899304
+F1_macro_finetune:0.414483063706461
+EP76 - Better Testing:  F1 = 0.4145
+F1_macro_finetune:0.4361463244226345
+EP77 - Better Testing:  F1 = 0.4361
+F1_macro_finetune:0.42389410220479246
+F1_macro_finetune:0.43998400887209477
+EP79 - Better Testing:  F1 = 0.4400
+F1_macro_finetune:0.4002476288681566
+
+Epoch : 80	 | 	  finetune Loss: 0.0257	 | 	Acc: 0.0000	 | 	F1: 0.4002
+F1_macro_test:0.060446718817155694
+F1_macro_finetune:0.4601661474282422
+EP81 - Better Testing:  F1 = 0.4602
+F1_macro_finetune:0.4530250371789702
+F1_macro_finetune:0.4389106940292776
+F1_macro_finetune:0.44933591600247885
+F1_macro_finetune:0.4689086940342294
+EP85 - Better Testing:  F1 = 0.4689
+
+Epoch : 85	 | 	  finetune Loss: 0.0242	 | 	Acc: 0.0000	 | 	F1: 0.4689
+F1_macro_test:0.06601670915499772
+F1_macro_finetune:0.44495076209547973
+F1_macro_finetune:0.4536593566219602
+F1_macro_finetune:0.48366165226241703
+EP88 - Better Testing:  F1 = 0.4837
+F1_macro_finetune:0.48126350437996046
+F1_macro_finetune:0.4767862370051452
+
+Epoch : 90	 | 	  finetune Loss: 0.0234	 | 	Acc: 0.0000	 | 	F1: 0.4768
+F1_macro_test:0.05870919815210303
+F1_macro_finetune:0.49416846706408146
+EP91 - Better Testing:  F1 = 0.4942
+F1_macro_finetune:0.5424279659485034
+EP92 - Better Testing:  F1 = 0.5424
+F1_macro_finetune:0.4890608381574813
+F1_macro_finetune:0.5136128714644039
+F1_macro_finetune:0.5224119956217902
+
+Epoch : 95	 | 	  finetune Loss: 0.0220	 | 	Acc: 0.0000	 | 	F1: 0.5224
+F1_macro_test:0.056840072189338994
+F1_macro_finetune:0.531451239843377
+F1_macro_finetune:0.5555227708147855
+EP97 - Better Testing:  F1 = 0.5555
+F1_macro_finetune:0.5586310025570831
+EP98 - Better Testing:  F1 = 0.5586
+F1_macro_finetune:0.5234737652819753
+F1_macro_finetune:0.5659373035905133
+EP100 - Better Testing:  F1 = 0.5659
+
+Epoch : 100	 | 	  finetune Loss: 0.0209	 | 	Acc: 0.0000	 | 	F1: 0.5659
+F1_macro_test:0.056838245643277885
+F1_macro_finetune:0.5730265553610475
+EP101 - Better Testing:  F1 = 0.5730
+F1_macro_finetune:0.5731122372548729
+EP102 - Better Testing:  F1 = 0.5731
+F1_macro_finetune:0.5554196192094233
+F1_macro_finetune:0.5601831552371432
+F1_macro_finetune:0.6105374383864227
+EP105 - Better Testing:  F1 = 0.6105
+
+Epoch : 105	 | 	  finetune Loss: 0.0197	 | 	Acc: 0.0000	 | 	F1: 0.6105
+F1_macro_test:0.056506701992522924
+F1_macro_finetune:0.5694110934034619
+F1_macro_finetune:0.6111468039275024
+EP107 - Better Testing:  F1 = 0.6111
+F1_macro_finetune:0.6020850476816887
+F1_macro_finetune:0.60967772277452
+F1_macro_finetune:0.6297723662849349
+EP110 - Better Testing:  F1 = 0.6298
+
+Epoch : 110	 | 	  finetune Loss: 0.0186	 | 	Acc: 0.0000	 | 	F1: 0.6298
+F1_macro_test:0.05510735332198721
+F1_macro_finetune:0.6321677487315557
+EP111 - Better Testing:  F1 = 0.6322
+F1_macro_finetune:0.6472728227101361
+EP112 - Better Testing:  F1 = 0.6473
+F1_macro_finetune:0.667973313919201
+EP113 - Better Testing:  F1 = 0.6680
+F1_macro_finetune:0.640511889948428
+F1_macro_finetune:0.681262166594633
+EP115 - Better Testing:  F1 = 0.6813
+
+Epoch : 115	 | 	  finetune Loss: 0.0174	 | 	Acc: 0.0000	 | 	F1: 0.6813
+F1_macro_test:0.0534647683423895
+F1_macro_finetune:0.6794592130893634
+F1_macro_finetune:0.6703793901765228
+F1_macro_finetune:0.6232903798117809
+F1_macro_finetune:0.6774607995853559
+F1_macro_finetune:0.6858759333812532
+EP120 - Better Testing:  F1 = 0.6859
+
+Epoch : 120	 | 	  finetune Loss: 0.0163	 | 	Acc: 0.0000	 | 	F1: 0.6859
+F1_macro_test:0.05667711382236178
+F1_macro_finetune:0.7026996779795628
+EP121 - Better Testing:  F1 = 0.7027
+F1_macro_finetune:0.6591413626937648
+F1_macro_finetune:0.6757505164655955
+F1_macro_finetune:0.6839088395589803
+F1_macro_finetune:0.7200647681963367
+EP125 - Better Testing:  F1 = 0.7201
+
+Epoch : 125	 | 	  finetune Loss: 0.0153	 | 	Acc: 0.0000	 | 	F1: 0.7201
+F1_macro_test:0.0530162782680942
+F1_macro_finetune:0.6611595704717762
+F1_macro_finetune:0.6842109374893137
+F1_macro_finetune:0.7309304893834012
+EP128 - Better Testing:  F1 = 0.7309
+F1_macro_finetune:0.7200222309807904
+F1_macro_finetune:0.7166159330289706
+
+Epoch : 130	 | 	  finetune Loss: 0.0145	 | 	Acc: 0.0000	 | 	F1: 0.7166
+F1_macro_test:0.053903980478490585
+F1_macro_finetune:0.7276397668125641
+F1_macro_finetune:0.7209711044298418
+F1_macro_finetune:0.7618888649143978
+EP133 - Better Testing:  F1 = 0.7619
+F1_macro_finetune:0.733396559284816
+F1_macro_finetune:0.750054837889025
+
+Epoch : 135	 | 	  finetune Loss: 0.0135	 | 	Acc: 0.0000	 | 	F1: 0.7501
+F1_macro_test:0.04971202625069254
+F1_macro_finetune:0.755997469662559
+F1_macro_finetune:0.746208949514082
+F1_macro_finetune:0.7289686275205615
+F1_macro_finetune:0.75867584126636
+F1_macro_finetune:0.7728888379452074
+EP140 - Better Testing:  F1 = 0.7729
+
+Epoch : 140	 | 	  finetune Loss: 0.0126	 | 	Acc: 0.0000	 | 	F1: 0.7729
+F1_macro_test:0.05163604710959815
+F1_macro_finetune:0.7865209632053447
+EP141 - Better Testing:  F1 = 0.7865
+F1_macro_finetune:0.8224551537565062
+EP142 - Better Testing:  F1 = 0.8225
+F1_macro_finetune:0.804176403657498
+F1_macro_finetune:0.7942677503218659
+F1_macro_finetune:0.796345613527093
+
+Epoch : 145	 | 	  finetune Loss: 0.0119	 | 	Acc: 0.0000	 | 	F1: 0.7963
+F1_macro_test:0.05166808624705382
+F1_macro_finetune:0.7941183760024705
+F1_macro_finetune:0.8017496990618133
+F1_macro_finetune:0.8273425689845995
+EP148 - Better Testing:  F1 = 0.8273
+F1_macro_finetune:0.8056508425953013
+F1_macro_finetune:0.8266202333518023
+
+Epoch : 150	 | 	  finetune Loss: 0.0112	 | 	Acc: 0.0000	 | 	F1: 0.8266
+F1_macro_test:0.05120338796354093
+F1_macro_finetune:0.8072395090430732
+F1_macro_finetune:0.779098972605618
+F1_macro_finetune:0.860633453238006
+EP153 - Better Testing:  F1 = 0.8606
+F1_macro_finetune:0.8153358066949281
+F1_macro_finetune:0.840776962847373
+
+Epoch : 155	 | 	  finetune Loss: 0.0105	 | 	Acc: 0.0000	 | 	F1: 0.8408
+F1_macro_test:0.05130264076795053
+F1_macro_finetune:0.8279444139616585
+F1_macro_finetune:0.839583447760306
+F1_macro_finetune:0.8622382568933503
+EP158 - Better Testing:  F1 = 0.8622
+F1_macro_finetune:0.8932233258640608
+EP159 - Better Testing:  F1 = 0.8932
+F1_macro_finetune:0.8425753611791142
+
+Epoch : 160	 | 	  finetune Loss: 0.0097	 | 	Acc: 0.0000	 | 	F1: 0.8426
+F1_macro_test:0.047382516981773766
+F1_macro_finetune:0.8597291706904064
+F1_macro_finetune:0.8997716622812397
+EP162 - Better Testing:  F1 = 0.8998
+F1_macro_finetune:0.8816046286800997
+F1_macro_finetune:0.889744463134156
+F1_macro_finetune:0.8948082280806571
+
+Epoch : 165	 | 	  finetune Loss: 0.0090	 | 	Acc: 0.0000	 | 	F1: 0.8948
+F1_macro_test:0.05053332263660073
+F1_macro_finetune:0.8378680552357113
+F1_macro_finetune:0.8840947079583046
+F1_macro_finetune:0.8783241925322112
+F1_macro_finetune:0.8836492075128524
+F1_macro_finetune:0.8941937125676335
+
+Epoch : 170	 | 	  finetune Loss: 0.0084	 | 	Acc: 0.0000	 | 	F1: 0.8942
+F1_macro_test:0.04614892112608648
+F1_macro_finetune:0.8887204584158998
+F1_macro_finetune:0.9121970272660858
+EP172 - Better Testing:  F1 = 0.9122
+F1_macro_finetune:0.8945022551231291
+F1_macro_finetune:0.9062293379604077
+F1_macro_finetune:0.8930844127234578
+
+Epoch : 175	 | 	  finetune Loss: 0.0079	 | 	Acc: 0.0000	 | 	F1: 0.8931
+F1_macro_test:0.05075460793349675
+F1_macro_finetune:0.9305757383018923
+EP176 - Better Testing:  F1 = 0.9306
+F1_macro_finetune:0.8892443602559329
+F1_macro_finetune:0.9245408274095943
+F1_macro_finetune:0.9250583790831223
+F1_macro_finetune:0.9230556720763233
+
+Epoch : 180	 | 	  finetune Loss: 0.0072	 | 	Acc: 0.0000	 | 	F1: 0.9231
+F1_macro_test:0.04571158325801554
+F1_macro_finetune:0.9287523758746226
+F1_macro_finetune:0.9423306727949461
+EP182 - Better Testing:  F1 = 0.9423
+F1_macro_finetune:0.9327640687656347
+F1_macro_finetune:0.9364890728186899
+F1_macro_finetune:0.927284862953886
+
+Epoch : 185	 | 	  finetune Loss: 0.0067	 | 	Acc: 0.0000	 | 	F1: 0.9273
+F1_macro_test:0.040978611916284845
+F1_macro_finetune:0.9320523647807152
+F1_macro_finetune:0.943886110206381
+EP187 - Better Testing:  F1 = 0.9439
+F1_macro_finetune:0.9370843099610908
+F1_macro_finetune:0.9409921942403104
+F1_macro_finetune:0.9327902115780615
+
+Epoch : 190	 | 	  finetune Loss: 0.0062	 | 	Acc: 0.0000	 | 	F1: 0.9328
+F1_macro_test:0.05063039812617978
+F1_macro_finetune:0.9298078049353985
+F1_macro_finetune:0.9622929546021267
+EP192 - Better Testing:  F1 = 0.9623
+F1_macro_finetune:0.9534531873575077
+F1_macro_finetune:0.9415064950469736
+F1_macro_finetune:0.9488748105077266
+
+Epoch : 195	 | 	  finetune Loss: 0.0056	 | 	Acc: 0.0000	 | 	F1: 0.9489
+F1_macro_test:0.04747811406873244
+F1_macro_finetune:0.9573533117501392
+F1_macro_finetune:0.9528046303163922
+F1_macro_finetune:0.9595974090065122
+F1_macro_finetune:0.9557504805230245
+F1_macro_finetune:0.966453751703654
+EP200 - Better Testing:  F1 = 0.9665
+
+Epoch : 200	 | 	  finetune Loss: 0.0054	 | 	Acc: 0.0000	 | 	F1: 0.9665
+F1_macro_test:0.048356422208131244
+F1_macro_finetune:0.9651514093154903
+F1_macro_finetune:0.96958050051289
+EP202 - Better Testing:  F1 = 0.9696
+F1_macro_finetune:0.9705694693731125
+EP203 - Better Testing:  F1 = 0.9706
+F1_macro_finetune:0.9613846885001583
+F1_macro_finetune:0.9619364297612627
+
+Epoch : 205	 | 	  finetune Loss: 0.0052	 | 	Acc: 0.0000	 | 	F1: 0.9619
+F1_macro_test:0.05076809637397647
+F1_macro_finetune:0.9544053044871695
+F1_macro_finetune:0.9613864132874812
+F1_macro_finetune:0.9666987004681811
+F1_macro_finetune:0.9758584340760872
+EP209 - Better Testing:  F1 = 0.9759
+F1_macro_finetune:0.9770981179521678
+EP210 - Better Testing:  F1 = 0.9771
+
+Epoch : 210	 | 	  finetune Loss: 0.0046	 | 	Acc: 0.0000	 | 	F1: 0.9771
+F1_macro_test:0.0489015645230745
+F1_macro_finetune:0.9760042297125109
+F1_macro_finetune:0.9763198297068646
+F1_macro_finetune:0.979168530587492
+EP213 - Better Testing:  F1 = 0.9792
+F1_macro_finetune:0.9776416944623876
+F1_macro_finetune:0.9799015824869187
+EP215 - Better Testing:  F1 = 0.9799
+
+Epoch : 215	 | 	  finetune Loss: 0.0042	 | 	Acc: 0.0000	 | 	F1: 0.9799
+F1_macro_test:0.04339040276007583
+F1_macro_finetune:0.9836938537239864
+EP216 - Better Testing:  F1 = 0.9837
+F1_macro_finetune:0.9745340925516188
+F1_macro_finetune:0.9772031529372301
+F1_macro_finetune:0.9790369205628183
+F1_macro_finetune:0.9832967235346486
+
+Epoch : 220	 | 	  finetune Loss: 0.0039	 | 	Acc: 0.0000	 | 	F1: 0.9833
+F1_macro_test:0.04863173552720123
+F1_macro_finetune:0.9817035676729207
+F1_macro_finetune:0.9812526265514334
+F1_macro_finetune:0.98711279980429
+EP223 - Better Testing:  F1 = 0.9871
+F1_macro_finetune:0.985526686677227
+F1_macro_finetune:0.9842682638275485
+
+Epoch : 225	 | 	  finetune Loss: 0.0037	 | 	Acc: 0.0000	 | 	F1: 0.9843
+F1_macro_test:0.04626600271011455
+F1_macro_finetune:0.9888487350229388
+EP226 - Better Testing:  F1 = 0.9888
+F1_macro_finetune:0.9870332736640289
+F1_macro_finetune:0.9815826677976275
+F1_macro_finetune:0.9910485131728735
+EP229 - Better Testing:  F1 = 0.9910
+F1_macro_finetune:0.9860478391030917
+
+Epoch : 230	 | 	  finetune Loss: 0.0034	 | 	Acc: 0.0000	 | 	F1: 0.9860
+F1_macro_test:0.04938250064467287
+F1_macro_finetune:0.9841505785123903
+F1_macro_finetune:0.9841642428067117
+F1_macro_finetune:0.9915976044943148
+EP233 - Better Testing:  F1 = 0.9916
+F1_macro_finetune:0.9898140276885252
+F1_macro_finetune:0.986972616022047
+
+Epoch : 235	 | 	  finetune Loss: 0.0032	 | 	Acc: 0.0000	 | 	F1: 0.9870
+F1_macro_test:0.0442883446261346
+F1_macro_finetune:0.9917728635044333
+EP236 - Better Testing:  F1 = 0.9918
+F1_macro_finetune:0.9869030251962257
+F1_macro_finetune:0.9883230666597254
+F1_macro_finetune:0.9963170157259799
+EP239 - Better Testing:  F1 = 0.9963
+F1_macro_finetune:0.9871186294859884
+
+Epoch : 240	 | 	  finetune Loss: 0.0032	 | 	Acc: 0.0000	 | 	F1: 0.9871
+F1_macro_test:0.04598880649141772
+F1_macro_finetune:0.987838858250649
+F1_macro_finetune:0.9923915045428231
+F1_macro_finetune:0.9923598578856933
+F1_macro_finetune:0.9933507626731554
+F1_macro_finetune:0.9881702122595152
+
+Epoch : 245	 | 	  finetune Loss: 0.0028	 | 	Acc: 0.0000	 | 	F1: 0.9882
+F1_macro_test:0.048834933239013265
+F1_macro_finetune:0.987745185112417
+F1_macro_finetune:0.9895530541538934
+F1_macro_finetune:0.9938765290782762
+F1_macro_finetune:0.9916558414329566
+F1_macro_finetune:0.9938187454784092
+
+Epoch : 250	 | 	  finetune Loss: 0.0026	 | 	Acc: 0.0000	 | 	F1: 0.9938
+F1_macro_test:0.045137979509322815
+F1_macro_finetune:0.9941436514146959
+F1_macro_finetune:0.9903236188995004
+F1_macro_finetune:0.9940771112522313
+F1_macro_finetune:0.9920869779625737
+F1_macro_finetune:0.9914454393036403
+
+Epoch : 255	 | 	  finetune Loss: 0.0025	 | 	Acc: 0.0000	 | 	F1: 0.9914
+F1_macro_test:0.04645217380740657
+F1_macro_finetune:0.9938092541715129
+F1_macro_finetune:0.9913488750182341
+F1_macro_finetune:0.9964305011813182
+EP258 - Better Testing:  F1 = 0.9964
+F1_macro_finetune:0.995197441321757
+F1_macro_finetune:0.9958532837078422
+
+Epoch : 260	 | 	  finetune Loss: 0.0024	 | 	Acc: 0.0000	 | 	F1: 0.9959
+F1_macro_test:0.04622429459318385
+F1_macro_finetune:0.9955048006704973
+F1_macro_finetune:0.9957914781491083
+F1_macro_finetune:0.9937854180851357
+F1_macro_finetune:0.9946261561292973
+F1_macro_finetune:0.9934640551718854
+
+Epoch : 265	 | 	  finetune Loss: 0.0021	 | 	Acc: 0.0000	 | 	F1: 0.9935
+F1_macro_test:0.04830819183712833
+F1_macro_finetune:0.9961518999113388
+F1_macro_finetune:0.9902634897130494
+F1_macro_finetune:0.9924417153741278
+F1_macro_finetune:0.9989584938462706
+EP269 - Better Testing:  F1 = 0.9990
+F1_macro_finetune:0.9961372351787878
+
+Epoch : 270	 | 	  finetune Loss: 0.0022	 | 	Acc: 0.0000	 | 	F1: 0.9961
+F1_macro_test:0.04970967640475485
+F1_macro_finetune:0.9946223530680167
+F1_macro_finetune:0.9967982713172164
+F1_macro_finetune:0.9960610339701218
+F1_macro_finetune:0.9973693782604663
+F1_macro_finetune:0.9960938260317351
+
+Epoch : 275	 | 	  finetune Loss: 0.0019	 | 	Acc: 0.0000	 | 	F1: 0.9961
+F1_macro_test:0.04771437714252705
+F1_macro_finetune:0.9956428909572136
+F1_macro_finetune:0.9932207769380111
+F1_macro_finetune:0.9960865492084738
+F1_macro_finetune:0.9964758097877019
+F1_macro_finetune:0.9980160150025895
+
+Epoch : 280	 | 	  finetune Loss: 0.0018	 | 	Acc: 0.0000	 | 	F1: 0.9980
+F1_macro_test:0.0439232257232562
+F1_macro_finetune:0.9980971633170949
+F1_macro_finetune:0.9968250003610626
+F1_macro_finetune:0.9984572195217991
+F1_macro_finetune:0.9986854126769261
+F1_macro_finetune:0.9946386581711176
+
+Epoch : 285	 | 	  finetune Loss: 0.0020	 | 	Acc: 0.0000	 | 	F1: 0.9946
+F1_macro_test:0.043933176390328045
+F1_macro_finetune:0.9987779016620739
+F1_macro_finetune:0.9975246698223943
+F1_macro_finetune:0.9978461106853188
+F1_macro_finetune:0.9981645286644552
+F1_macro_finetune:0.9979022980703149
+
+Epoch : 290	 | 	  finetune Loss: 0.0015	 | 	Acc: 0.0000	 | 	F1: 0.9979
+F1_macro_test:0.04613879860024787
+F1_macro_finetune:0.9974242843338071
+F1_macro_finetune:0.9979537072880352
+F1_macro_finetune:0.9953354233938561
+F1_macro_finetune:0.9994157732487937
+EP294 - Better Testing:  F1 = 0.9994
+F1_macro_finetune:0.9985060527390847
+
+Epoch : 295	 | 	  finetune Loss: 0.0014	 | 	Acc: 0.0000	 | 	F1: 0.9985
+F1_macro_test:0.046802562458382095
+F1_macro_finetune:0.9975844784355903
+F1_macro_finetune:0.9980984357010038
+F1_macro_finetune:0.9964555015500004
+F1_macro_finetune:0.9975264046858837
+F1_macro_finetune:0.997143635740669
+
+Epoch : 300	 | 	  finetune Loss: 0.0014	 | 	Acc: 0.0000	 | 	F1: 0.9971
+F1_macro_test:0.0455431588355509
+Fine-tuning ended ....
+====================================================================================================
+EP2 - Best Testing: Acc=0.0000| Precision = 0.0000 | Recall = 0.0000 | F1 = 0.0836
+0.08360029850727964
+[0.49645326657129235, 0.4745585852761073, 0.4930535269353037, 0.6855296135074529, 0.5314429598137463, 0.5573621553884711, 0.5348206131767775, 0.4770504401285454, 0.7265193370165746, 0.5049572501261989, 0.5127306273062731, 0.5050945617955926, 0.5592592592592593, 0.4412361623616236, 0.5135320518248794, 0.5020445864162488, 0.6045328399629972, 0.3894518654997697, 0.4675468827620467, 0.5534238028388708, 0.534665519032886, 0.5190503553729786, 0.49753670388751037]
+====================================================================================================
+文件 'existing_file.xlsx' 不存在，将创建新文件。
+Pre-training Epoch: 3	 Train Loss: 3.6372	 CL Loss: 5.1656	 RB Loss: 0.3013
+
+Pre-training Epoch: 4	 Train Loss: 3.4494	 CL Loss: 5.0360	 RB Loss: 0.2886
+
+Fine-tuning started ....
+F1_macro_finetune:0.09011794256843944
+F1_macro_finetune:0.10034141425619264
+F1_macro_finetune:0.10122580183448884
+F1_macro_finetune:0.10303306645501056
+F1_macro_finetune:0.10227894649213871
+
+Epoch : 5	 | 	  finetune Loss: 0.0582	 | 	Acc: 0.0000	 | 	F1: 0.1023
+F1_macro_test:0.03238888369566704
+F1_macro_finetune:0.11167763430700543
+F1_macro_finetune:0.11931488766498106
+F1_macro_finetune:0.1392236271927786
+F1_macro_finetune:0.15339377244559652
+F1_macro_finetune:0.16650887119127378
+
+Epoch : 10	 | 	  finetune Loss: 0.0471	 | 	Acc: 0.0000	 | 	F1: 0.1665
+F1_macro_test:0.08353967163618259
+F1_macro_finetune:0.1671984835222707
+F1_macro_finetune:0.1769705459074788
+F1_macro_finetune:0.17470668256975516
+F1_macro_finetune:0.18820775385043004
+F1_macro_finetune:0.1853248821513659
+
+Epoch : 15	 | 	  finetune Loss: 0.0425	 | 	Acc: 0.0000	 | 	F1: 0.1853
+F1_macro_test:0.08259192926988188
+F1_macro_finetune:0.19832399382318822
+F1_macro_finetune:0.19410992547765546
+F1_macro_finetune:0.19659146460642388
+F1_macro_finetune:0.20409786554153952
+F1_macro_finetune:0.2131525448254663
+
+Epoch : 20	 | 	  finetune Loss: 0.0402	 | 	Acc: 0.0000	 | 	F1: 0.2132
+F1_macro_test:0.07708850021736492
+F1_macro_finetune:0.20698095265538916
+F1_macro_finetune:0.21458668595180885
+F1_macro_finetune:0.21881113048920756
+F1_macro_finetune:0.22039823827020233
+F1_macro_finetune:0.2145450296419673
+
+Epoch : 25	 | 	  finetune Loss: 0.0385	 | 	Acc: 0.0000	 | 	F1: 0.2145
+F1_macro_test:0.07754186232933981
+F1_macro_finetune:0.21665630132780103
+F1_macro_finetune:0.22942566307300985
+F1_macro_finetune:0.23388420327069437
+F1_macro_finetune:0.22764047329957957
+F1_macro_finetune:0.24235519129100555
+
+Epoch : 30	 | 	  finetune Loss: 0.0370	 | 	Acc: 0.0000	 | 	F1: 0.2424
+F1_macro_test:0.07495783804460919
+F1_macro_finetune:0.24363763261149105
+F1_macro_finetune:0.24043729555663707
+F1_macro_finetune:0.2478607799803772
+F1_macro_finetune:0.26292306923789244
+F1_macro_finetune:0.2591234959029566
+
+Epoch : 35	 | 	  finetune Loss: 0.0358	 | 	Acc: 0.0000	 | 	F1: 0.2591
+F1_macro_test:0.06814771061822288
+F1_macro_finetune:0.26294392695874125
+F1_macro_finetune:0.27381552957212507
+F1_macro_finetune:0.25834846737453765
+F1_macro_finetune:0.28522315713556995
+F1_macro_finetune:0.26471167783419425
+
+Epoch : 40	 | 	  finetune Loss: 0.0347	 | 	Acc: 0.0000	 | 	F1: 0.2647
+F1_macro_test:0.0706049042053721
+F1_macro_finetune:0.2789395039886285
+F1_macro_finetune:0.27741876503996077
+F1_macro_finetune:0.288775640496469
+F1_macro_finetune:0.282458743337573
+F1_macro_finetune:0.28376479022408707
+
+Epoch : 45	 | 	  finetune Loss: 0.0337	 | 	Acc: 0.0000	 | 	F1: 0.2838
+F1_macro_test:0.07247506269449448
+F1_macro_finetune:0.26987680132340525
+F1_macro_finetune:0.29502288421285205
+F1_macro_finetune:0.2916972010353431
+F1_macro_finetune:0.30039448373482147
+F1_macro_finetune:0.3020694894309805
+
+Epoch : 50	 | 	  finetune Loss: 0.0324	 | 	Acc: 0.0000	 | 	F1: 0.3021
+F1_macro_test:0.06791271435311931
+F1_macro_finetune:0.2973482265431797
+F1_macro_finetune:0.3349081063214149
+F1_macro_finetune:0.3224413664964773
+F1_macro_finetune:0.3113131641244801
+F1_macro_finetune:0.3391213268776863
+
+Epoch : 55	 | 	  finetune Loss: 0.0311	 | 	Acc: 0.0000	 | 	F1: 0.3391
+F1_macro_test:0.06565600653647805
+F1_macro_finetune:0.2963404824105866
+F1_macro_finetune:0.3399006380894761
+F1_macro_finetune:0.3470031853319631
+F1_macro_finetune:0.3597634315696038
+F1_macro_finetune:0.33746897237406814
+
+Epoch : 60	 | 	  finetune Loss: 0.0301	 | 	Acc: 0.0000	 | 	F1: 0.3375
+F1_macro_test:0.06886630653057886
+F1_macro_finetune:0.340789128602099
+F1_macro_finetune:0.3300534868973031
+F1_macro_finetune:0.34872834839351513
+F1_macro_finetune:0.36325151365879327
+F1_macro_finetune:0.3751934638159114
+
+Epoch : 65	 | 	  finetune Loss: 0.0290	 | 	Acc: 0.0000	 | 	F1: 0.3752
+F1_macro_test:0.0650348287072756
+F1_macro_finetune:0.37303979183662983
+F1_macro_finetune:0.3471831617351107
+F1_macro_finetune:0.3492312947982032
+F1_macro_finetune:0.3737490801267086
+F1_macro_finetune:0.39586720138916576
+
+Epoch : 70	 | 	  finetune Loss: 0.0275	 | 	Acc: 0.0000	 | 	F1: 0.3959
+F1_macro_test:0.06331021592524881
+F1_macro_finetune:0.3972646723447761
+F1_macro_finetune:0.40297163731042834
+F1_macro_finetune:0.41896051267624623
+F1_macro_finetune:0.40125102297941856
+F1_macro_finetune:0.3951674326978109
+
+Epoch : 75	 | 	  finetune Loss: 0.0266	 | 	Acc: 0.0000	 | 	F1: 0.3952
+F1_macro_test:0.06291732832762978
+F1_macro_finetune:0.3999052454905168
+F1_macro_finetune:0.4036321363671892
+F1_macro_finetune:0.4627006603404595
+F1_macro_finetune:0.4405030415331929
+F1_macro_finetune:0.459362604286697
+
+Epoch : 80	 | 	  finetune Loss: 0.0255	 | 	Acc: 0.0000	 | 	F1: 0.4594
+F1_macro_test:0.06528784841594233
+F1_macro_finetune:0.4366789810812334
+F1_macro_finetune:0.4495213202858567
+F1_macro_finetune:0.4392990499881856
+F1_macro_finetune:0.47739779532245746
+F1_macro_finetune:0.4491539520175866
+
+Epoch : 85	 | 	  finetune Loss: 0.0243	 | 	Acc: 0.0000	 | 	F1: 0.4492
+F1_macro_test:0.06306137069030697
+F1_macro_finetune:0.46086908732560616
+F1_macro_finetune:0.46395692067539857
+F1_macro_finetune:0.4769302853191773
+F1_macro_finetune:0.47742186613091453
+F1_macro_finetune:0.4539925246043307
+
+Epoch : 90	 | 	  finetune Loss: 0.0231	 | 	Acc: 0.0000	 | 	F1: 0.4540
+F1_macro_test:0.06322350152559102
+F1_macro_finetune:0.5317590161182467
+F1_macro_finetune:0.5076621845807349
+F1_macro_finetune:0.49930805791677174
+F1_macro_finetune:0.47104286727352884
+F1_macro_finetune:0.5433292968727923
+
+Epoch : 95	 | 	  finetune Loss: 0.0218	 | 	Acc: 0.0000	 | 	F1: 0.5433
+F1_macro_test:0.06032374469592813
+F1_macro_finetune:0.5204447076158197
+F1_macro_finetune:0.537791986408153
+F1_macro_finetune:0.5604013737907393
+F1_macro_finetune:0.5390322325450423
+F1_macro_finetune:0.5339613421241388
+
+Epoch : 100	 | 	  finetune Loss: 0.0207	 | 	Acc: 0.0000	 | 	F1: 0.5340
+F1_macro_test:0.06404782798898236
+F1_macro_finetune:0.5497496930023286
+F1_macro_finetune:0.5621138776952715
+F1_macro_finetune:0.5808197479293243
+F1_macro_finetune:0.5729273812802648
+F1_macro_finetune:0.5743051950269572
+
+Epoch : 105	 | 	  finetune Loss: 0.0196	 | 	Acc: 0.0000	 | 	F1: 0.5743
+F1_macro_test:0.059327943259733826
+F1_macro_finetune:0.5903753325043953
+F1_macro_finetune:0.5846131790492858
+F1_macro_finetune:0.5919721284805768
+F1_macro_finetune:0.634892110277191
+F1_macro_finetune:0.6076325786155676
+
+Epoch : 110	 | 	  finetune Loss: 0.0186	 | 	Acc: 0.0000	 | 	F1: 0.6076
+F1_macro_test:0.05890181975408781
+F1_macro_finetune:0.6491668910833873
+F1_macro_finetune:0.6248706097341723
+F1_macro_finetune:0.6389555495599291
+F1_macro_finetune:0.6441101987489938
+F1_macro_finetune:0.6571576328527181
+
+Epoch : 115	 | 	  finetune Loss: 0.0174	 | 	Acc: 0.0000	 | 	F1: 0.6572
+F1_macro_test:0.05838043828720059
+F1_macro_finetune:0.5933960481600947
+F1_macro_finetune:0.6565094168074362
+F1_macro_finetune:0.675413922835397
+F1_macro_finetune:0.6797871708427546
+F1_macro_finetune:0.6478589417916264
+
+Epoch : 120	 | 	  finetune Loss: 0.0162	 | 	Acc: 0.0000	 | 	F1: 0.6479
+F1_macro_test:0.05706087408965815
+F1_macro_finetune:0.713314300498257
+F1_macro_finetune:0.6777423348868681
+F1_macro_finetune:0.6643563718703183
+F1_macro_finetune:0.7050567725847705
+F1_macro_finetune:0.6979322844001249
+
+Epoch : 125	 | 	  finetune Loss: 0.0152	 | 	Acc: 0.0000	 | 	F1: 0.6979
+F1_macro_test:0.05907831635866111
+F1_macro_finetune:0.706862991977275
+F1_macro_finetune:0.7083010731668691
+F1_macro_finetune:0.6855767966864118
+F1_macro_finetune:0.703975734866813
+F1_macro_finetune:0.7419503088938776
+
+Epoch : 130	 | 	  finetune Loss: 0.0145	 | 	Acc: 0.0000	 | 	F1: 0.7420
+F1_macro_test:0.05670404032863314
+F1_macro_finetune:0.7050071374006371
+F1_macro_finetune:0.7211812042421717
+F1_macro_finetune:0.7490408960573498
+F1_macro_finetune:0.7344461776734434
+F1_macro_finetune:0.7436303767622611
+
+Epoch : 135	 | 	  finetune Loss: 0.0135	 | 	Acc: 0.0000	 | 	F1: 0.7436
+F1_macro_test:0.055306556484953424
+F1_macro_finetune:0.759203017423448
+F1_macro_finetune:0.7876369428709241
+F1_macro_finetune:0.7800315431356376
+F1_macro_finetune:0.7716542460829896
+F1_macro_finetune:0.7456192867925427
+
+Epoch : 140	 | 	  finetune Loss: 0.0127	 | 	Acc: 0.0000	 | 	F1: 0.7456
+F1_macro_test:0.05479790673517794
+F1_macro_finetune:0.7959988514118541
+F1_macro_finetune:0.7999232669746109
+F1_macro_finetune:0.810560735199482
+F1_macro_finetune:0.8126683199972081
+F1_macro_finetune:0.8093999760908343
+
+Epoch : 145	 | 	  finetune Loss: 0.0118	 | 	Acc: 0.0000	 | 	F1: 0.8094
+F1_macro_test:0.05899209371274695
+F1_macro_finetune:0.828016154874931
+F1_macro_finetune:0.8081539660650219
+F1_macro_finetune:0.8418870284404762
+F1_macro_finetune:0.8433373798672672
+F1_macro_finetune:0.838990770366111
+
+Epoch : 150	 | 	  finetune Loss: 0.0107	 | 	Acc: 0.0000	 | 	F1: 0.8390
+F1_macro_test:0.05347927743756683
+F1_macro_finetune:0.8013969898512314
+F1_macro_finetune:0.8410201602227874
+F1_macro_finetune:0.8164166541859047
+F1_macro_finetune:0.8663053462313399
+F1_macro_finetune:0.8627869468165842
+
+Epoch : 155	 | 	  finetune Loss: 0.0102	 | 	Acc: 0.0000	 | 	F1: 0.8628
+F1_macro_test:0.054062802156940364
+F1_macro_finetune:0.8445035244508791
+F1_macro_finetune:0.8360996512712255
+F1_macro_finetune:0.8714540673719204
+F1_macro_finetune:0.8654988916501619
+F1_macro_finetune:0.8920600499763417
+
+Epoch : 160	 | 	  finetune Loss: 0.0095	 | 	Acc: 0.0000	 | 	F1: 0.8921
+F1_macro_test:0.051979669889812154
+F1_macro_finetune:0.8843009468716072
+F1_macro_finetune:0.8873610717003331
+F1_macro_finetune:0.9150910768234121
+F1_macro_finetune:0.889296165437091
+F1_macro_finetune:0.8732555097922866
+
+Epoch : 165	 | 	  finetune Loss: 0.0088	 | 	Acc: 0.0000	 | 	F1: 0.8733
+F1_macro_test:0.051998049121317835
+F1_macro_finetune:0.929237701712669
+F1_macro_finetune:0.8584539356377541
+F1_macro_finetune:0.9135826543579696
+F1_macro_finetune:0.9046687083721127
+F1_macro_finetune:0.9155584094019474
+
+Epoch : 170	 | 	  finetune Loss: 0.0081	 | 	Acc: 0.0000	 | 	F1: 0.9156
+F1_macro_test:0.05340280642337423
+F1_macro_finetune:0.8909212583814193
+F1_macro_finetune:0.903568564923147
+F1_macro_finetune:0.9341245288859463
+F1_macro_finetune:0.9215629048377956
+F1_macro_finetune:0.9383531678060699
+
+Epoch : 175	 | 	  finetune Loss: 0.0075	 | 	Acc: 0.0000	 | 	F1: 0.9384
+F1_macro_test:0.05442199020835816
+F1_macro_finetune:0.9106395086276554
+F1_macro_finetune:0.9335018458318922
+F1_macro_finetune:0.9431003394623932
+F1_macro_finetune:0.9457587536296445
+F1_macro_finetune:0.9379213737251747
+
+Epoch : 180	 | 	  finetune Loss: 0.0070	 | 	Acc: 0.0000	 | 	F1: 0.9379
+F1_macro_test:0.04928184335224525
+F1_macro_finetune:0.9423892430155251
+F1_macro_finetune:0.9474015226055089
+F1_macro_finetune:0.9444940295744414
+F1_macro_finetune:0.9316462351713397
+F1_macro_finetune:0.9346401612419694
+
+Epoch : 185	 | 	  finetune Loss: 0.0066	 | 	Acc: 0.0000	 | 	F1: 0.9346
+F1_macro_test:0.04981641320592157
+F1_macro_finetune:0.9463377664376363
+F1_macro_finetune:0.9302893781199376
+F1_macro_finetune:0.9528299925531938
+F1_macro_finetune:0.9481404958711122
+F1_macro_finetune:0.9515293815086318
+
+Epoch : 190	 | 	  finetune Loss: 0.0061	 | 	Acc: 0.0000	 | 	F1: 0.9515
+F1_macro_test:0.05345284893424029
+F1_macro_finetune:0.9577461941318005
+F1_macro_finetune:0.9635454496588681
+F1_macro_finetune:0.9609350771414215
+F1_macro_finetune:0.97009001031212
+F1_macro_finetune:0.9584473125799954
+
+Epoch : 195	 | 	  finetune Loss: 0.0055	 | 	Acc: 0.0000	 | 	F1: 0.9584
+F1_macro_test:0.05180716314777431
+F1_macro_finetune:0.9635584370502565
+F1_macro_finetune:0.9674027502198799
+F1_macro_finetune:0.9591567082158956
+F1_macro_finetune:0.9552074642852127
+F1_macro_finetune:0.970143650504848
+
+Epoch : 200	 | 	  finetune Loss: 0.0051	 | 	Acc: 0.0000	 | 	F1: 0.9701
+F1_macro_test:0.04816081980692268
+F1_macro_finetune:0.9699700789205362
+F1_macro_finetune:0.9801563907060009
+F1_macro_finetune:0.9720878286448853
+F1_macro_finetune:0.9759207805182468
+F1_macro_finetune:0.9815768193422307
+
+Epoch : 205	 | 	  finetune Loss: 0.0047	 | 	Acc: 0.0000	 | 	F1: 0.9816
+F1_macro_test:0.04860060289300203
+F1_macro_finetune:0.9796684633555843
+F1_macro_finetune:0.9682239974010243
+F1_macro_finetune:0.9659903007844816
+F1_macro_finetune:0.9870796486030113
+F1_macro_finetune:0.9794076132865353
+
+Epoch : 210	 | 	  finetune Loss: 0.0045	 | 	Acc: 0.0000	 | 	F1: 0.9794
+F1_macro_test:0.05279772408039111
+F1_macro_finetune:0.9810986405413916
+F1_macro_finetune:0.9830330054200052
+F1_macro_finetune:0.9772642595835067
+F1_macro_finetune:0.9837238931772889
+F1_macro_finetune:0.9809208223357129
+
+Epoch : 215	 | 	  finetune Loss: 0.0041	 | 	Acc: 0.0000	 | 	F1: 0.9809
+F1_macro_test:0.048142919829112805
+F1_macro_finetune:0.9800220134642089
+F1_macro_finetune:0.9858356422528914
+F1_macro_finetune:0.9859734227743466
+F1_macro_finetune:0.979494787465078
+F1_macro_finetune:0.9884847733112347
+
+Epoch : 220	 | 	  finetune Loss: 0.0037	 | 	Acc: 0.0000	 | 	F1: 0.9885
+F1_macro_test:0.04649714240354796
+F1_macro_finetune:0.9858948515223014
+F1_macro_finetune:0.9871841482259479
+F1_macro_finetune:0.9841369482554193
+F1_macro_finetune:0.9921020641397588
+F1_macro_finetune:0.979441018894984
+
+Epoch : 225	 | 	  finetune Loss: 0.0036	 | 	Acc: 0.0000	 | 	F1: 0.9794
+F1_macro_test:0.04859146611117482
+F1_macro_finetune:0.9839965409745343
+F1_macro_finetune:0.9836349255451383
+F1_macro_finetune:0.9884727781065539
+F1_macro_finetune:0.9839612856240956
+F1_macro_finetune:0.9864980178105635
+
+Epoch : 230	 | 	  finetune Loss: 0.0034	 | 	Acc: 0.0000	 | 	F1: 0.9865
+F1_macro_test:0.04547021824046226
+F1_macro_finetune:0.9913387888966634
+F1_macro_finetune:0.9869294641893959
+F1_macro_finetune:0.9832718080130971
+F1_macro_finetune:0.9885536081835596
+F1_macro_finetune:0.9906514160186404
+
+Epoch : 235	 | 	  finetune Loss: 0.0031	 | 	Acc: 0.0000	 | 	F1: 0.9907
+F1_macro_test:0.04663486557774382
+F1_macro_finetune:0.9889623520075458
+F1_macro_finetune:0.9924077694937823
+F1_macro_finetune:0.9881080683237009
+F1_macro_finetune:0.9917639840798154
+F1_macro_finetune:0.9945229361191718
+
+Epoch : 240	 | 	  finetune Loss: 0.0028	 | 	Acc: 0.0000	 | 	F1: 0.9945
+F1_macro_test:0.04937973674373771
+F1_macro_finetune:0.9903018508330895
+F1_macro_finetune:0.9879410617615009
+F1_macro_finetune:0.9936820389790053
+F1_macro_finetune:0.9944657142029791
+F1_macro_finetune:0.9949315074243787
+
+Epoch : 245	 | 	  finetune Loss: 0.0027	 | 	Acc: 0.0000	 | 	F1: 0.9949
+F1_macro_test:0.049112806791160736
+F1_macro_finetune:0.993339944839272
+F1_macro_finetune:0.9952955981437747
+F1_macro_finetune:0.9947769019632134
+F1_macro_finetune:0.993462999747832
+F1_macro_finetune:0.9945674908434617
+
+Epoch : 250	 | 	  finetune Loss: 0.0025	 | 	Acc: 0.0000	 | 	F1: 0.9946
+F1_macro_test:0.04724743246718486
+F1_macro_finetune:0.9938110168481628
+F1_macro_finetune:0.9970974432341764
+F1_macro_finetune:0.9947200497885236
+F1_macro_finetune:0.9955408676498061
+F1_macro_finetune:0.9953760962058376
+
+Epoch : 255	 | 	  finetune Loss: 0.0026	 | 	Acc: 0.0000	 | 	F1: 0.9954
+F1_macro_test:0.05230645552453588
+F1_macro_finetune:0.9939269488524383
+F1_macro_finetune:0.9983876755023811
+F1_macro_finetune:0.9900314363517692
+F1_macro_finetune:0.9939530759318612
+F1_macro_finetune:0.9966147685344273
+
+Epoch : 260	 | 	  finetune Loss: 0.0022	 | 	Acc: 0.0000	 | 	F1: 0.9966
+F1_macro_test:0.04767932369589765
+F1_macro_finetune:0.9964162708454016
+F1_macro_finetune:0.9950872663016341
+F1_macro_finetune:0.9971977108379353
+F1_macro_finetune:0.9959916986441434
+F1_macro_finetune:0.9985846197693329
+
+Epoch : 265	 | 	  finetune Loss: 0.0019	 | 	Acc: 0.0000	 | 	F1: 0.9986
+F1_macro_test:0.048696733324565686
+F1_macro_finetune:0.9971399459965796
+F1_macro_finetune:0.9984077309951952
+F1_macro_finetune:0.9946509025651656
+F1_macro_finetune:0.9969691501576511
+F1_macro_finetune:0.998053182683486
+
+Epoch : 270	 | 	  finetune Loss: 0.0018	 | 	Acc: 0.0000	 | 	F1: 0.9981
+F1_macro_test:0.05330609557818193
+F1_macro_finetune:0.9984376526835913
+F1_macro_finetune:0.9988557527111347
+F1_macro_finetune:0.9977438163815776
+F1_macro_finetune:0.9992852826557256
+F1_macro_finetune:0.9961792160198462
+
+Epoch : 275	 | 	  finetune Loss: 0.0018	 | 	Acc: 0.0000	 | 	F1: 0.9962
+F1_macro_test:0.05143123239747779
+F1_macro_finetune:0.9956302974908359
+F1_macro_finetune:0.9959778295135323
+F1_macro_finetune:0.9977182030270373
+F1_macro_finetune:0.9981457345854402
+F1_macro_finetune:0.9991989069123994
+
+Epoch : 280	 | 	  finetune Loss: 0.0016	 | 	Acc: 0.0000	 | 	F1: 0.9992
+F1_macro_test:0.051329576603071206
+F1_macro_finetune:0.9979999725456684
+F1_macro_finetune:0.9967470981103947
+F1_macro_finetune:0.9983251307534037
+F1_macro_finetune:0.9982212677527605
+F1_macro_finetune:0.9985158610599061
+
+Epoch : 285	 | 	  finetune Loss: 0.0015	 | 	Acc: 0.0000	 | 	F1: 0.9985
+F1_macro_test:0.05030293684451287
+F1_macro_finetune:0.9979434945469187
+F1_macro_finetune:0.9966741619071641
+F1_macro_finetune:0.998783819420962
+F1_macro_finetune:0.9987810954519477
+F1_macro_finetune:0.9985793820513692
+
+Epoch : 290	 | 	  finetune Loss: 0.0014	 | 	Acc: 0.0000	 | 	F1: 0.9986
+F1_macro_test:0.04995544084227056
+F1_macro_finetune:0.9993573775458607
+F1_macro_finetune:0.9943667549852556
+F1_macro_finetune:0.9970396953562167
+F1_macro_finetune:0.9972493863062034
+F1_macro_finetune:0.9989185344868782
+
+Epoch : 295	 | 	  finetune Loss: 0.0013	 | 	Acc: 0.0000	 | 	F1: 0.9989
+F1_macro_test:0.05151559951605564
+F1_macro_finetune:0.9992916594143588
+F1_macro_finetune:0.9989264815504185
+F1_macro_finetune:0.9984582215781528
+F1_macro_finetune:0.9986916661461336
+F1_macro_finetune:0.9990926032052547
+
+Epoch : 300	 | 	  finetune Loss: 0.0013	 | 	Acc: 0.0000	 | 	F1: 0.9991
+F1_macro_test:0.04530982828498887
+Fine-tuning ended ....
+====================================================================================================
+EP4 - Best Testing: Acc=0.0000| Precision = 0.0000 | Recall = 0.0000 | F1 = 0.0836
+0.08360029850727964
+[0.49645326657129235, 0.4745585852761073, 0.4930535269353037, 0.6855296135074529, 0.5314429598137463, 0.5573621553884711, 0.5348206131767775, 0.4770504401285454, 0.7265193370165746, 0.5049572501261989, 0.5127306273062731, 0.5050945617955926, 0.5592592592592593, 0.4412361623616236, 0.5135320518248794, 0.5020445864162488, 0.6045328399629972, 0.3894518654997697, 0.4675468827620467, 0.5534238028388708, 0.534665519032886, 0.5190503553729786, 0.49753670388751037]
+====================================================================================================
+Pre-training Epoch: 5	 Train Loss: 3.3263	 CL Loss: 4.9784	 RB Loss: 0.2770
+
+Pre-training Epoch: 6	 Train Loss: 3.2399	 CL Loss: 4.9386	 RB Loss: 0.2673
+
+Fine-tuning started ....
+F1_macro_finetune:0.08080249149969249
+F1_macro_finetune:0.09200867381996744
+F1_macro_finetune:0.10395025522684173
+F1_macro_finetune:0.10156540044357797
+F1_macro_finetune:0.11678777653756978
+
+Epoch : 5	 | 	  finetune Loss: 0.0523	 | 	Acc: 0.0000	 | 	F1: 0.1168
+F1_macro_test:0.05083472432249383
+F1_macro_finetune:0.13558627159969608
+F1_macro_finetune:0.1516604786320418
+F1_macro_finetune:0.16019486396685387
+F1_macro_finetune:0.16393599084854665
+F1_macro_finetune:0.17156186516125427
+
+Epoch : 10	 | 	  finetune Loss: 0.0449	 | 	Acc: 0.0000	 | 	F1: 0.1716
+F1_macro_test:0.0845624726495867
+EP10 - Better Testing: Acc=0.0000| Precision = 0.0000 | Recall = 0.0000 | F1 = 0.0846
+F1_macro_finetune:0.1764987903261299
+F1_macro_finetune:0.18018321093311626
+F1_macro_finetune:0.1849558154203589
+F1_macro_finetune:0.1935698444941644
+F1_macro_finetune:0.19288943864551408
+
+Epoch : 15	 | 	  finetune Loss: 0.0415	 | 	Acc: 0.0000	 | 	F1: 0.1929
+F1_macro_test:0.08522477896913479
+EP15 - Better Testing: Acc=0.0000| Precision = 0.0000 | Recall = 0.0000 | F1 = 0.0852
+F1_macro_finetune:0.20707205418882188
+F1_macro_finetune:0.20451212151335096
+F1_macro_finetune:0.2193355779601187
+F1_macro_finetune:0.21414384622648372
+F1_macro_finetune:0.21744200085007967
+
+Epoch : 20	 | 	  finetune Loss: 0.0392	 | 	Acc: 0.0000	 | 	F1: 0.2174
+F1_macro_test:0.07779560978674875
+F1_macro_finetune:0.2272439674815194
+F1_macro_finetune:0.231262656347009
+F1_macro_finetune:0.23120427545159802
+F1_macro_finetune:0.23849198864452387
+F1_macro_finetune:0.2292992482658134
+
+Epoch : 25	 | 	  finetune Loss: 0.0376	 | 	Acc: 0.0000	 | 	F1: 0.2293
+F1_macro_test:0.07411467214906987
+F1_macro_finetune:0.2515069356131372
+F1_macro_finetune:0.23429935805221724
+F1_macro_finetune:0.23061381844654438
+F1_macro_finetune:0.23596859709020596
+F1_macro_finetune:0.24976457071187647
+
+Epoch : 30	 | 	  finetune Loss: 0.0363	 | 	Acc: 0.0000	 | 	F1: 0.2498
+F1_macro_test:0.07681175989971187
+F1_macro_finetune:0.2613232014074927
+F1_macro_finetune:0.25482615173097434
+F1_macro_finetune:0.25335179732239543
+F1_macro_finetune:0.25909441722356946
+F1_macro_finetune:0.25246463453044526
+
+Epoch : 35	 | 	  finetune Loss: 0.0350	 | 	Acc: 0.0000	 | 	F1: 0.2525
+F1_macro_test:0.07230505254922251
+F1_macro_finetune:0.2717337708651051
+F1_macro_finetune:0.2524729635199089
+F1_macro_finetune:0.279991544793642
+F1_macro_finetune:0.2683033628433668
+F1_macro_finetune:0.2638104324344334
+
+Epoch : 40	 | 	  finetune Loss: 0.0339	 | 	Acc: 0.0000	 | 	F1: 0.2638
+F1_macro_test:0.0667821092871884
+F1_macro_finetune:0.28597463513118276
+F1_macro_finetune:0.284071589419209
+F1_macro_finetune:0.30342304089551403
+F1_macro_finetune:0.28261996106707243
+F1_macro_finetune:0.2865105010888936
+
+Epoch : 45	 | 	  finetune Loss: 0.0329	 | 	Acc: 0.0000	 | 	F1: 0.2865
+F1_macro_test:0.06702167390117555
+F1_macro_finetune:0.3100677451495677
+F1_macro_finetune:0.318354421671832
+F1_macro_finetune:0.30683836685935056
+F1_macro_finetune:0.3208633991017857
+F1_macro_finetune:0.3226594214114473
+
+Epoch : 50	 | 	  finetune Loss: 0.0317	 | 	Acc: 0.0000	 | 	F1: 0.3227
+F1_macro_test:0.07091673142473376
+F1_macro_finetune:0.31760752923747976
+F1_macro_finetune:0.3433406209952726
+F1_macro_finetune:0.34984632066148036
+F1_macro_finetune:0.32028163371606827
+F1_macro_finetune:0.35892707708954436
+
+Epoch : 55	 | 	  finetune Loss: 0.0307	 | 	Acc: 0.0000	 | 	F1: 0.3589
+F1_macro_test:0.0681876282124264
+F1_macro_finetune:0.34689054799590224
+F1_macro_finetune:0.35774641626406095
+F1_macro_finetune:0.3891380972818773
+F1_macro_finetune:0.37609762728197255
+F1_macro_finetune:0.3825947715362591
+
+Epoch : 60	 | 	  finetune Loss: 0.0293	 | 	Acc: 0.0000	 | 	F1: 0.3826
+F1_macro_test:0.06615919917023735
+F1_macro_finetune:0.3476638179201222
+F1_macro_finetune:0.3760854683049776
+F1_macro_finetune:0.38406228858440133
+F1_macro_finetune:0.42333175946062385
+F1_macro_finetune:0.42494625561070043
+
+Epoch : 65	 | 	  finetune Loss: 0.0284	 | 	Acc: 0.0000	 | 	F1: 0.4249
+F1_macro_test:0.06188088320148161
+F1_macro_finetune:0.38880229985315395
+F1_macro_finetune:0.4316776318560151
+F1_macro_finetune:0.41972327077794014
+F1_macro_finetune:0.35865107944077934
+F1_macro_finetune:0.41320685065741075
+
+Epoch : 70	 | 	  finetune Loss: 0.0272	 | 	Acc: 0.0000	 | 	F1: 0.4132
+F1_macro_test:0.063228242687807
+F1_macro_finetune:0.39185579488655903
+F1_macro_finetune:0.4225033250468778
+F1_macro_finetune:0.4684853214987354
+F1_macro_finetune:0.4450120273134787
+F1_macro_finetune:0.4554997693122624
+
+Epoch : 75	 | 	  finetune Loss: 0.0259	 | 	Acc: 0.0000	 | 	F1: 0.4555
+F1_macro_test:0.06314314656811225
+F1_macro_finetune:0.42810426251930994
+F1_macro_finetune:0.47880034050496767
+F1_macro_finetune:0.45996995987934924
+F1_macro_finetune:0.4615670132396965
+F1_macro_finetune:0.4815325381868071
+
+Epoch : 80	 | 	  finetune Loss: 0.0248	 | 	Acc: 0.0000	 | 	F1: 0.4815
+F1_macro_test:0.06196339187267457
+F1_macro_finetune:0.46310458814098765
+F1_macro_finetune:0.4882006206645476
+F1_macro_finetune:0.50211545223906
+F1_macro_finetune:0.4428154055001547
+F1_macro_finetune:0.5205210351781195
+
+Epoch : 85	 | 	  finetune Loss: 0.0237	 | 	Acc: 0.0000	 | 	F1: 0.5205
+F1_macro_test:0.0628474659225806
+F1_macro_finetune:0.4853666214994324
+F1_macro_finetune:0.5034307876834486
+F1_macro_finetune:0.5059994892764311
+F1_macro_finetune:0.5408264250975328
+F1_macro_finetune:0.5121489493170944
+
+Epoch : 90	 | 	  finetune Loss: 0.0225	 | 	Acc: 0.0000	 | 	F1: 0.5121
+F1_macro_test:0.06201027023885107
+F1_macro_finetune:0.5232539094010134
+F1_macro_finetune:0.5748974659230598
+F1_macro_finetune:0.5548087764078996
+F1_macro_finetune:0.5505063790146459
+F1_macro_finetune:0.5560903946934461
+
+Epoch : 95	 | 	  finetune Loss: 0.0212	 | 	Acc: 0.0000	 | 	F1: 0.5561
+F1_macro_test:0.06292208195064314
+F1_macro_finetune:0.5538657363148136
+F1_macro_finetune:0.5416808417221628
+F1_macro_finetune:0.5728440601084835
+F1_macro_finetune:0.5548867124738921
+F1_macro_finetune:0.5633852252536263
+
+Epoch : 100	 | 	  finetune Loss: 0.0200	 | 	Acc: 0.0000	 | 	F1: 0.5634
+F1_macro_test:0.06019308361921829
+F1_macro_finetune:0.5999511272152622
+F1_macro_finetune:0.5785102130826801
+F1_macro_finetune:0.6221384357318872
+F1_macro_finetune:0.5919647918388365
+F1_macro_finetune:0.6179734104583142
+
+Epoch : 105	 | 	  finetune Loss: 0.0189	 | 	Acc: 0.0000	 | 	F1: 0.6180
+F1_macro_test:0.061784044558666
+F1_macro_finetune:0.6046011906992959
+F1_macro_finetune:0.6324898885318693
+F1_macro_finetune:0.6360877084798756
+F1_macro_finetune:0.6486627000682119
+F1_macro_finetune:0.667374200994283
+
+Epoch : 110	 | 	  finetune Loss: 0.0178	 | 	Acc: 0.0000	 | 	F1: 0.6674
+F1_macro_test:0.055545844167501864
+F1_macro_finetune:0.6284260913519472
+F1_macro_finetune:0.6831889225059218
+F1_macro_finetune:0.6822943230124728
+F1_macro_finetune:0.6635467135092074
+F1_macro_finetune:0.6943795724964712
+
+Epoch : 115	 | 	  finetune Loss: 0.0167	 | 	Acc: 0.0000	 | 	F1: 0.6944
+F1_macro_test:0.056547083591420536
+F1_macro_finetune:0.6792102949927649
+F1_macro_finetune:0.7064568288210183
+F1_macro_finetune:0.6648126265069619
+F1_macro_finetune:0.6850744085089332
+F1_macro_finetune:0.7311522088920149
+
+Epoch : 120	 | 	  finetune Loss: 0.0158	 | 	Acc: 0.0000	 | 	F1: 0.7312
+F1_macro_test:0.05783634204011099
+F1_macro_finetune:0.7164420371069804
+F1_macro_finetune:0.6951437705938267
+F1_macro_finetune:0.7465123196049668
+F1_macro_finetune:0.7281310080887833
+F1_macro_finetune:0.7460173215548422
+
+Epoch : 125	 | 	  finetune Loss: 0.0149	 | 	Acc: 0.0000	 | 	F1: 0.7460
+F1_macro_test:0.055555193410989794
+F1_macro_finetune:0.738197897505347
+F1_macro_finetune:0.7123786706486552
+F1_macro_finetune:0.7611592978892101
+F1_macro_finetune:0.7529244830315199
+F1_macro_finetune:0.7700176461360045
+
+Epoch : 130	 | 	  finetune Loss: 0.0137	 | 	Acc: 0.0000	 | 	F1: 0.7700
+F1_macro_test:0.0491841403643755
+F1_macro_finetune:0.7576377674968231
+F1_macro_finetune:0.7702312435365924
+F1_macro_finetune:0.7927721324295512
+F1_macro_finetune:0.7804863958388598
+F1_macro_finetune:0.7742460693339924
+
+Epoch : 135	 | 	  finetune Loss: 0.0129	 | 	Acc: 0.0000	 | 	F1: 0.7742
+F1_macro_test:0.054025792437899824
+F1_macro_finetune:0.7933577930341534
+F1_macro_finetune:0.7978480458252932
+F1_macro_finetune:0.807906726627481
+F1_macro_finetune:0.8079900188745179
+F1_macro_finetune:0.7907046471626947
+
+Epoch : 140	 | 	  finetune Loss: 0.0121	 | 	Acc: 0.0000	 | 	F1: 0.7907
+F1_macro_test:0.05566778040344128
+F1_macro_finetune:0.7995052258140167
+F1_macro_finetune:0.7995423275058661
+F1_macro_finetune:0.8377916066956684
+F1_macro_finetune:0.8406416779540152
+F1_macro_finetune:0.8218905954739639
+
+Epoch : 145	 | 	  finetune Loss: 0.0114	 | 	Acc: 0.0000	 | 	F1: 0.8219
+F1_macro_test:0.053495469637769195
+F1_macro_finetune:0.8451474192523855
+F1_macro_finetune:0.8129461413969118
+F1_macro_finetune:0.8336819057348428
+F1_macro_finetune:0.819649843327265
+F1_macro_finetune:0.8314254152046914
+
+Epoch : 150	 | 	  finetune Loss: 0.0106	 | 	Acc: 0.0000	 | 	F1: 0.8314
+F1_macro_test:0.0551450279998487
+F1_macro_finetune:0.8357773489594996
+F1_macro_finetune:0.8518221693243391
+F1_macro_finetune:0.8571642105426129
+F1_macro_finetune:0.8593297872865352
+F1_macro_finetune:0.9139302227589943
+
+Epoch : 155	 | 	  finetune Loss: 0.0096	 | 	Acc: 0.0000	 | 	F1: 0.9139
+F1_macro_test:0.04792071582945659
+F1_macro_finetune:0.8585318145463944
+F1_macro_finetune:0.8740559240488726
+F1_macro_finetune:0.8566481721347176
+F1_macro_finetune:0.8777393672078173
+F1_macro_finetune:0.8399314635239707
+
+Epoch : 160	 | 	  finetune Loss: 0.0091	 | 	Acc: 0.0000	 | 	F1: 0.8399
+F1_macro_test:0.0530699945576877
+F1_macro_finetune:0.8643826717755054
+F1_macro_finetune:0.8992013071302261
+F1_macro_finetune:0.8891600173369728
+F1_macro_finetune:0.8924566782587849
+F1_macro_finetune:0.8935782366314953
+
+Epoch : 165	 | 	  finetune Loss: 0.0084	 | 	Acc: 0.0000	 | 	F1: 0.8936
+F1_macro_test:0.05041524695869887
+F1_macro_finetune:0.911787901001806
+F1_macro_finetune:0.9097665741114472
+F1_macro_finetune:0.900503099679427
+F1_macro_finetune:0.8869918763630704
+F1_macro_finetune:0.9001119476650908
+
+Epoch : 170	 | 	  finetune Loss: 0.0078	 | 	Acc: 0.0000	 | 	F1: 0.9001
+F1_macro_test:0.05160129692368219
+F1_macro_finetune:0.931833307370917
+F1_macro_finetune:0.9324050907312976
+F1_macro_finetune:0.9142994678410021
+F1_macro_finetune:0.9178351338657166
+F1_macro_finetune:0.9225746398210938
+
+Epoch : 175	 | 	  finetune Loss: 0.0071	 | 	Acc: 0.0000	 | 	F1: 0.9226
+F1_macro_test:0.05459040136489945
+F1_macro_finetune:0.9365752353118053
+F1_macro_finetune:0.9159706530590898
+F1_macro_finetune:0.9408701771634874
+F1_macro_finetune:0.9355055554694762
+F1_macro_finetune:0.9354521682914978
+
+Epoch : 180	 | 	  finetune Loss: 0.0066	 | 	Acc: 0.0000	 | 	F1: 0.9355
+F1_macro_test:0.05152162236908341
+F1_macro_finetune:0.9320932845230852
+F1_macro_finetune:0.9435906900404787
+F1_macro_finetune:0.9503959729056903
+F1_macro_finetune:0.9470611299863769
+F1_macro_finetune:0.9412567558516716
+
+Epoch : 185	 | 	  finetune Loss: 0.0063	 | 	Acc: 0.0000	 | 	F1: 0.9413
+F1_macro_test:0.04850198670611778
+F1_macro_finetune:0.9488448581049513
+F1_macro_finetune:0.9610238311164809
+F1_macro_finetune:0.9636364706771338
+F1_macro_finetune:0.9635299836913981
+F1_macro_finetune:0.9564299373579975
+
+Epoch : 190	 | 	  finetune Loss: 0.0057	 | 	Acc: 0.0000	 | 	F1: 0.9564
+F1_macro_test:0.045932651261069705
+F1_macro_finetune:0.9649145437353887
+F1_macro_finetune:0.9490819316292746
+F1_macro_finetune:0.9578526335303481
+F1_macro_finetune:0.9573418234410811
+F1_macro_finetune:0.9626696183391515
+
+Epoch : 195	 | 	  finetune Loss: 0.0053	 | 	Acc: 0.0000	 | 	F1: 0.9627
+F1_macro_test:0.04766264009000314
+F1_macro_finetune:0.9556643869172328
+F1_macro_finetune:0.9548868618669417
+F1_macro_finetune:0.9672533650684652
+F1_macro_finetune:0.9662427393242085
+F1_macro_finetune:0.9814845394328854
+
+Epoch : 200	 | 	  finetune Loss: 0.0049	 | 	Acc: 0.0000	 | 	F1: 0.9815
+F1_macro_test:0.04321385960028062
+F1_macro_finetune:0.9669768818301828
+F1_macro_finetune:0.976966132778146
+F1_macro_finetune:0.9737827506545472
+F1_macro_finetune:0.9720680352863286
+F1_macro_finetune:0.9664608410524194
+
+Epoch : 205	 | 	  finetune Loss: 0.0047	 | 	Acc: 0.0000	 | 	F1: 0.9665
+F1_macro_test:0.0504396999282781
+F1_macro_finetune:0.9708655018612867
+F1_macro_finetune:0.9800788868704648
+F1_macro_finetune:0.9775034920418473
+F1_macro_finetune:0.9806285827364113
+F1_macro_finetune:0.9867196041640163
+
+Epoch : 210	 | 	  finetune Loss: 0.0041	 | 	Acc: 0.0000	 | 	F1: 0.9867
+F1_macro_test:0.04576318071334552
+F1_macro_finetune:0.9768332307117598
+F1_macro_finetune:0.9838232571004986
+F1_macro_finetune:0.9760660467339682
+F1_macro_finetune:0.9659432212313371
+F1_macro_finetune:0.987237116955108
+
+Epoch : 215	 | 	  finetune Loss: 0.0038	 | 	Acc: 0.0000	 | 	F1: 0.9872
+F1_macro_test:0.04719239358341404
+F1_macro_finetune:0.9807913099393804
+F1_macro_finetune:0.9782207167246857
+F1_macro_finetune:0.9862257401252696
+F1_macro_finetune:0.986755686697662
+F1_macro_finetune:0.9837233054411839
+
+Epoch : 220	 | 	  finetune Loss: 0.0038	 | 	Acc: 0.0000	 | 	F1: 0.9837
+F1_macro_test:0.05022748871141405
+F1_macro_finetune:0.9881026363466464
+F1_macro_finetune:0.9817020335421084
+F1_macro_finetune:0.9858691707353134
+F1_macro_finetune:0.9840801053845634
+F1_macro_finetune:0.9901374285772329
+
+Epoch : 225	 | 	  finetune Loss: 0.0033	 | 	Acc: 0.0000	 | 	F1: 0.9901
+F1_macro_test:0.04721628152153142
+F1_macro_finetune:0.9888577281122448
+F1_macro_finetune:0.9900883600012041
+F1_macro_finetune:0.9894269110812484
+F1_macro_finetune:0.9846228421521295
+F1_macro_finetune:0.9894794892287372
+
+Epoch : 230	 | 	  finetune Loss: 0.0031	 | 	Acc: 0.0000	 | 	F1: 0.9895
+F1_macro_test:0.04895411976450991
+F1_macro_finetune:0.9923001502010778
+F1_macro_finetune:0.9896479766656927
+F1_macro_finetune:0.9930887511741259
+F1_macro_finetune:0.9933391079776098
+F1_macro_finetune:0.9921015580518207
+
+Epoch : 235	 | 	  finetune Loss: 0.0029	 | 	Acc: 0.0000	 | 	F1: 0.9921
+F1_macro_test:0.045379930314129055
+F1_macro_finetune:0.99372508246487
+F1_macro_finetune:0.9884813380271954
+F1_macro_finetune:0.9962443975478095
+F1_macro_finetune:0.9952851615751984
+F1_macro_finetune:0.994959280469984
+
+Epoch : 240	 | 	  finetune Loss: 0.0028	 | 	Acc: 0.0000	 | 	F1: 0.9950
+F1_macro_test:0.04768344131067904
+F1_macro_finetune:0.9937017151619665
+F1_macro_finetune:0.9950667439816625
+F1_macro_finetune:0.9944081025834784
+F1_macro_finetune:0.9916887068835629
+F1_macro_finetune:0.9969706474711976
+
+Epoch : 245	 | 	  finetune Loss: 0.0024	 | 	Acc: 0.0000	 | 	F1: 0.9970
+F1_macro_test:0.045738798040984095
+F1_macro_finetune:0.9945348394102514
+F1_macro_finetune:0.9919003393425058
+F1_macro_finetune:0.9971120261546517
+F1_macro_finetune:0.9976391330621557
+F1_macro_finetune:0.9948262508450733
+
+Epoch : 250	 | 	  finetune Loss: 0.0023	 | 	Acc: 0.0000	 | 	F1: 0.9948
+F1_macro_test:0.048845390403202384
+F1_macro_finetune:0.991767115094011
+F1_macro_finetune:0.9951771736226468
+F1_macro_finetune:0.992766674113718
+F1_macro_finetune:0.9976810357911318
+F1_macro_finetune:0.9969129847876463
+
+Epoch : 255	 | 	  finetune Loss: 0.0023	 | 	Acc: 0.0000	 | 	F1: 0.9969
+F1_macro_test:0.0536618191328334
+F1_macro_finetune:0.9954161098526193
+F1_macro_finetune:0.9956373943061029
+F1_macro_finetune:0.9956441019272798
+F1_macro_finetune:0.9975574455068099
+F1_macro_finetune:0.9978944966221704
+
+Epoch : 260	 | 	  finetune Loss: 0.0020	 | 	Acc: 0.0000	 | 	F1: 0.9979
+F1_macro_test:0.04666000314545979
+F1_macro_finetune:0.997253044476559
+F1_macro_finetune:0.9980628958639803
+F1_macro_finetune:0.9958873226095714
+F1_macro_finetune:0.9976906114051699
+F1_macro_finetune:0.9943185152319134
+
+Epoch : 265	 | 	  finetune Loss: 0.0020	 | 	Acc: 0.0000	 | 	F1: 0.9943
+F1_macro_test:0.04923854470211713
+F1_macro_finetune:0.9982659865465888
+F1_macro_finetune:0.9983585214312904
+F1_macro_finetune:0.9989992112127909
+F1_macro_finetune:0.9983410428196118
+F1_macro_finetune:0.9982595233540258
+
+Epoch : 270	 | 	  finetune Loss: 0.0018	 | 	Acc: 0.0000	 | 	F1: 0.9983
+F1_macro_test:0.04537841965091011
+F1_macro_finetune:0.9964102819156859
+F1_macro_finetune:0.9912438006721674
+F1_macro_finetune:0.995588164976443
+F1_macro_finetune:0.9977823594735077
+F1_macro_finetune:0.9979444719317793
+
+Epoch : 275	 | 	  finetune Loss: 0.0016	 | 	Acc: 0.0000	 | 	F1: 0.9979
+F1_macro_test:0.05263395253193704
+F1_macro_finetune:0.9984574408523659
+F1_macro_finetune:0.9977516756442293
+F1_macro_finetune:0.9983755616351269
+F1_macro_finetune:0.9963092458216305
+F1_macro_finetune:0.9970470980190184
+
+Epoch : 280	 | 	  finetune Loss: 0.0017	 | 	Acc: 0.0000	 | 	F1: 0.9970
+F1_macro_test:0.05052509180100096
+F1_macro_finetune:0.9993732738933625
+F1_macro_finetune:0.9983999654472356
+F1_macro_finetune:0.9981422801771135
+F1_macro_finetune:0.9986481133989327
+F1_macro_finetune:0.9989178931182674
+
+Epoch : 285	 | 	  finetune Loss: 0.0015	 | 	Acc: 0.0000	 | 	F1: 0.9989
+F1_macro_test:0.0492496043503563
+F1_macro_finetune:0.9986764890524316
+F1_macro_finetune:0.9987240399272251
+F1_macro_finetune:0.9972232516621257
+F1_macro_finetune:0.9987061104589523
+F1_macro_finetune:0.9992060324367793
+
+Epoch : 290	 | 	  finetune Loss: 0.0014	 | 	Acc: 0.0000	 | 	F1: 0.9992
+F1_macro_test:0.05297462632824744
+F1_macro_finetune:0.999137333837584
+F1_macro_finetune:0.9988101141488963
+F1_macro_finetune:0.9989226690825604
+F1_macro_finetune:0.9974475089195536
+F1_macro_finetune:0.9977274708219614
+
+Epoch : 295	 | 	  finetune Loss: 0.0016	 | 	Acc: 0.0000	 | 	F1: 0.9977
+F1_macro_test:0.05190296454651278
+F1_macro_finetune:0.9991936897581685
+F1_macro_finetune:0.9977437211262089
+F1_macro_finetune:0.9990212989298439
+F1_macro_finetune:0.9990380275645451
+F1_macro_finetune:0.9993847831308268
+
+Epoch : 300	 | 	  finetune Loss: 0.0013	 | 	Acc: 0.0000	 | 	F1: 0.9994
+F1_macro_test:0.05225088720542779
+Fine-tuning ended ....
+====================================================================================================
+EP6 - Best Testing: Acc=0.0000| Precision = 0.0000 | Recall = 0.0000 | F1 = 0.0852
+0.08522477896913479
+[0.49623271340009534, 0.4895611939478815, 0.5024572557779878, 0.6881677878907797, 0.520656189897763, 0.5251044277360066, 0.5441095890410959, 0.5001327371803829, 0.5138121546961326, 0.49786907916877, 0.4813653136531365, 0.5515103453247784, 0.5446581196581197, 0.4017527675276753, 0.5079780252349901, 0.5100112572522683, 0.5676141619712388, 0.21533855366190696, 0.4762403750620963, 0.5920943170592212, 0.5238250323741287, 0.5097503423317684, 0.4926488833746898]
+====================================================================================================
+Pre-training Epoch: 7	 Train Loss: 3.1814	 CL Loss: 4.9068	 RB Loss: 0.2609
+
+Pre-training Epoch: 8	 Train Loss: 3.1464	 CL Loss: 4.8898	 RB Loss: 0.2565
+
+Fine-tuning started ....
+F1_macro_finetune:0.10111657781117606
+F1_macro_finetune:0.1072981840406504
+F1_macro_finetune:0.11442196158411737
+F1_macro_finetune:0.1366301418612128
+F1_macro_finetune:0.138585944819872
+
+Epoch : 5	 | 	  finetune Loss: 0.0514	 | 	Acc: 0.0000	 | 	F1: 0.1386
+F1_macro_test:0.07884917585675841
+F1_macro_finetune:0.15761566731314394
+F1_macro_finetune:0.16308607785689355
+F1_macro_finetune:0.1686193356551085
+F1_macro_finetune:0.17425775995708429
+F1_macro_finetune:0.1850721687331897
+
+Epoch : 10	 | 	  finetune Loss: 0.0440	 | 	Acc: 0.0000	 | 	F1: 0.1851
+F1_macro_test:0.08116016575786426
+F1_macro_finetune:0.18634828057081265
+F1_macro_finetune:0.18797680649316342
+F1_macro_finetune:0.19215128253348873
+F1_macro_finetune:0.1893332088707555
+F1_macro_finetune:0.19905450270188288
+
+Epoch : 15	 | 	  finetune Loss: 0.0411	 | 	Acc: 0.0000	 | 	F1: 0.1991
+F1_macro_test:0.08355827449184448
+F1_macro_finetune:0.2011026347685614
+F1_macro_finetune:0.21268711758818348
+F1_macro_finetune:0.20385999716868278
+F1_macro_finetune:0.20853172749402157
+F1_macro_finetune:0.22246749434860022
+
+Epoch : 20	 | 	  finetune Loss: 0.0390	 | 	Acc: 0.0000	 | 	F1: 0.2225
+F1_macro_test:0.08150926890187604
+F1_macro_finetune:0.21959679641503002
+F1_macro_finetune:0.22645685166499924
+F1_macro_finetune:0.22606262380586262
+F1_macro_finetune:0.22638384286163254
+F1_macro_finetune:0.22604516356106147
+
+Epoch : 25	 | 	  finetune Loss: 0.0374	 | 	Acc: 0.0000	 | 	F1: 0.2260
+F1_macro_test:0.0755279256183794
+F1_macro_finetune:0.2383693844958501
+F1_macro_finetune:0.23956886733655577
+F1_macro_finetune:0.2432546676362099
+F1_macro_finetune:0.24765464071550744
+F1_macro_finetune:0.2668605600483797
+
+Epoch : 30	 | 	  finetune Loss: 0.0361	 | 	Acc: 0.0000	 | 	F1: 0.2669
+F1_macro_test:0.0730592504319565
+F1_macro_finetune:0.27130141338280184
+F1_macro_finetune:0.25813901182556903
+F1_macro_finetune:0.26595076367189596
+F1_macro_finetune:0.27200624709040744
+F1_macro_finetune:0.25820211153301736
+
+Epoch : 35	 | 	  finetune Loss: 0.0347	 | 	Acc: 0.0000	 | 	F1: 0.2582
+F1_macro_test:0.06878213524867378
+F1_macro_finetune:0.2700143142972601
+F1_macro_finetune:0.27444746722802504
+F1_macro_finetune:0.2884085971405304
+F1_macro_finetune:0.29819910570875835
+F1_macro_finetune:0.28401402614583304
+
+Epoch : 40	 | 	  finetune Loss: 0.0334	 | 	Acc: 0.0000	 | 	F1: 0.2840
+F1_macro_test:0.0672513734029319
+F1_macro_finetune:0.28241204689335314
+F1_macro_finetune:0.28685804815762156
+F1_macro_finetune:0.2914241415337025
+F1_macro_finetune:0.29697619688917243
+F1_macro_finetune:0.2939700932492476
+
+Epoch : 45	 | 	  finetune Loss: 0.0322	 | 	Acc: 0.0000	 | 	F1: 0.2940
+F1_macro_test:0.06256894883397748
+F1_macro_finetune:0.29043990712624185
+F1_macro_finetune:0.30787956340355005
+F1_macro_finetune:0.289419002379424
+F1_macro_finetune:0.3177164395080378
+F1_macro_finetune:0.2923333310233772
+
+Epoch : 50	 | 	  finetune Loss: 0.0308	 | 	Acc: 0.0000	 | 	F1: 0.2923
+F1_macro_test:0.06319097271473133
+F1_macro_finetune:0.30813804507612624
+F1_macro_finetune:0.31285663492234755
+F1_macro_finetune:0.32592762159520033
+F1_macro_finetune:0.33930637574745043
+F1_macro_finetune:0.33045736741107085
+
+Epoch : 55	 | 	  finetune Loss: 0.0298	 | 	Acc: 0.0000	 | 	F1: 0.3305
+F1_macro_test:0.06228842868140428
+F1_macro_finetune:0.3643515927788462
+F1_macro_finetune:0.3245172532000516
+F1_macro_finetune:0.35300971134748105
+F1_macro_finetune:0.3498316456602087
+F1_macro_finetune:0.33667897628575005
+
+Epoch : 60	 | 	  finetune Loss: 0.0284	 | 	Acc: 0.0000	 | 	F1: 0.3367
+F1_macro_test:0.061000115202144725
+F1_macro_finetune:0.3785505938067583
+F1_macro_finetune:0.3608265326164477
+F1_macro_finetune:0.4006023536172917
+F1_macro_finetune:0.39483681643809015
+F1_macro_finetune:0.4049836623450132
+
+Epoch : 65	 | 	  finetune Loss: 0.0273	 | 	Acc: 0.0000	 | 	F1: 0.4050
+F1_macro_test:0.061971804390464534
+F1_macro_finetune:0.3975268390440571
+F1_macro_finetune:0.40752151241690415
+F1_macro_finetune:0.40277129246557464
+F1_macro_finetune:0.4219414549940544
+F1_macro_finetune:0.41176697422378183
+
+Epoch : 70	 | 	  finetune Loss: 0.0261	 | 	Acc: 0.0000	 | 	F1: 0.4118
+F1_macro_test:0.06121226911122276
+F1_macro_finetune:0.4242178172125787
+F1_macro_finetune:0.44018843732684704
+F1_macro_finetune:0.4225584000767462
+F1_macro_finetune:0.4659553699176787
+F1_macro_finetune:0.47981549490872055
+
+Epoch : 75	 | 	  finetune Loss: 0.0247	 | 	Acc: 0.0000	 | 	F1: 0.4798
+F1_macro_test:0.05333680476275533
+F1_macro_finetune:0.4697985488136573
+F1_macro_finetune:0.4900732814367205
+F1_macro_finetune:0.49552091374238577
+F1_macro_finetune:0.43428760032710956
+F1_macro_finetune:0.47985959084214813
+
+Epoch : 80	 | 	  finetune Loss: 0.0237	 | 	Acc: 0.0000	 | 	F1: 0.4799
+F1_macro_test:0.05690046608251621
+F1_macro_finetune:0.4776583150582729
+F1_macro_finetune:0.4945412792298325
+F1_macro_finetune:0.4793720779395409
+F1_macro_finetune:0.4900563432242105
+F1_macro_finetune:0.511694947977086
+
+Epoch : 85	 | 	  finetune Loss: 0.0224	 | 	Acc: 0.0000	 | 	F1: 0.5117
+F1_macro_test:0.06178127108548767
+F1_macro_finetune:0.5171853639142678
+F1_macro_finetune:0.5123732184600371
+F1_macro_finetune:0.5635467104638462
+F1_macro_finetune:0.5164226504631756
+F1_macro_finetune:0.5298044626207722
+
+Epoch : 90	 | 	  finetune Loss: 0.0214	 | 	Acc: 0.0000	 | 	F1: 0.5298
+F1_macro_test:0.055289045198803684
+F1_macro_finetune:0.5615018075126962
+F1_macro_finetune:0.5783638205376372
+F1_macro_finetune:0.5712921900152512
+F1_macro_finetune:0.5846600283248031
+F1_macro_finetune:0.60569355724103
+
+Epoch : 95	 | 	  finetune Loss: 0.0200	 | 	Acc: 0.0000	 | 	F1: 0.6057
+F1_macro_test:0.05628449305592004
+F1_macro_finetune:0.5784601697365414
+F1_macro_finetune:0.615120721214398
+F1_macro_finetune:0.6077525674890448
+F1_macro_finetune:0.6334235462289552
+F1_macro_finetune:0.6281582681285309
+
+Epoch : 100	 | 	  finetune Loss: 0.0190	 | 	Acc: 0.0000	 | 	F1: 0.6282
+F1_macro_test:0.056791136446651375
+F1_macro_finetune:0.655305394052717
+F1_macro_finetune:0.631549583402953
+F1_macro_finetune:0.6304491828540015
+F1_macro_finetune:0.6526380602860399
+F1_macro_finetune:0.6511127715853098
+
+Epoch : 105	 | 	  finetune Loss: 0.0180	 | 	Acc: 0.0000	 | 	F1: 0.6511
+F1_macro_test:0.054068482642015046
+F1_macro_finetune:0.6410133702160227
+F1_macro_finetune:0.6613336991600518
+F1_macro_finetune:0.6810344251507677
+F1_macro_finetune:0.6743820425589243
+F1_macro_finetune:0.6897474857567224
+
+Epoch : 110	 | 	  finetune Loss: 0.0166	 | 	Acc: 0.0000	 | 	F1: 0.6897
+F1_macro_test:0.054469974617336665
+F1_macro_finetune:0.6852244826069989
+F1_macro_finetune:0.6821664960727141
+F1_macro_finetune:0.6786291124915015
+F1_macro_finetune:0.747056950282283
+F1_macro_finetune:0.7398187330422615
+
+Epoch : 115	 | 	  finetune Loss: 0.0158	 | 	Acc: 0.0000	 | 	F1: 0.7398
+F1_macro_test:0.05434412636901088
+F1_macro_finetune:0.7372850289312818
+F1_macro_finetune:0.7379820828852539
+F1_macro_finetune:0.6908258028173307
+F1_macro_finetune:0.7108270169886891
+F1_macro_finetune:0.7409791957607111
+
+Epoch : 120	 | 	  finetune Loss: 0.0149	 | 	Acc: 0.0000	 | 	F1: 0.7410
+F1_macro_test:0.05243512830554976
+F1_macro_finetune:0.7471315467715232
+F1_macro_finetune:0.7712141914434146
+F1_macro_finetune:0.7394665411415238
+F1_macro_finetune:0.7540586354668709
+F1_macro_finetune:0.7655425597531335
+
+Epoch : 125	 | 	  finetune Loss: 0.0139	 | 	Acc: 0.0000	 | 	F1: 0.7655
+F1_macro_test:0.048121076565331
+F1_macro_finetune:0.7113871520583166
+F1_macro_finetune:0.7758524256985327
+F1_macro_finetune:0.7667568614519535
+F1_macro_finetune:0.8079662724881085
+F1_macro_finetune:0.8057794824442396
+
+Epoch : 130	 | 	  finetune Loss: 0.0132	 | 	Acc: 0.0000	 | 	F1: 0.8058
+F1_macro_test:0.0529276830002675
+F1_macro_finetune:0.7925739424771148
+F1_macro_finetune:0.8186807448321275
+F1_macro_finetune:0.8102850996525012
+F1_macro_finetune:0.8331382699543851
+F1_macro_finetune:0.8037430693220441
+
+Epoch : 135	 | 	  finetune Loss: 0.0121	 | 	Acc: 0.0000	 | 	F1: 0.8037
+F1_macro_test:0.04889081050979647
+F1_macro_finetune:0.8347057559852628
+F1_macro_finetune:0.8349520124320943
+F1_macro_finetune:0.8198527942956632
+F1_macro_finetune:0.8270890880085756
+F1_macro_finetune:0.8577090189361697
+
+Epoch : 140	 | 	  finetune Loss: 0.0113	 | 	Acc: 0.0000	 | 	F1: 0.8577
+F1_macro_test:0.04936267727718555
+F1_macro_finetune:0.8250584621599076
+F1_macro_finetune:0.8309286089568861
+F1_macro_finetune:0.8334511635480679
+F1_macro_finetune:0.8369839684340121
+F1_macro_finetune:0.8670248322126557
+
+Epoch : 145	 | 	  finetune Loss: 0.0105	 | 	Acc: 0.0000	 | 	F1: 0.8670
+F1_macro_test:0.04518905858536399
+F1_macro_finetune:0.8774655767721286
+F1_macro_finetune:0.8693646374996615
+F1_macro_finetune:0.8732911844915047
+F1_macro_finetune:0.8640769427359907
+F1_macro_finetune:0.8935105163123648
+
+Epoch : 150	 | 	  finetune Loss: 0.0098	 | 	Acc: 0.0000	 | 	F1: 0.8935
+F1_macro_test:0.04279972681908313
+F1_macro_finetune:0.8667915422786412
+F1_macro_finetune:0.8608545931645044
+F1_macro_finetune:0.900821723244361
+F1_macro_finetune:0.8424389518912024
+F1_macro_finetune:0.8941331916772536
+
+Epoch : 155	 | 	  finetune Loss: 0.0090	 | 	Acc: 0.0000	 | 	F1: 0.8941
+F1_macro_test:0.05111891686761183
+F1_macro_finetune:0.9067230813200039
+F1_macro_finetune:0.8976986206435815
+F1_macro_finetune:0.901165171093539
+F1_macro_finetune:0.9309529810327934
+F1_macro_finetune:0.9171602652786001
+
+Epoch : 160	 | 	  finetune Loss: 0.0084	 | 	Acc: 0.0000	 | 	F1: 0.9172
+F1_macro_test:0.0442750327790318
+F1_macro_finetune:0.9010501701807441
+F1_macro_finetune:0.9080576218772269
+F1_macro_finetune:0.921718154332392
+F1_macro_finetune:0.9405340800137197
+F1_macro_finetune:0.9265425431764902
+
+Epoch : 165	 | 	  finetune Loss: 0.0076	 | 	Acc: 0.0000	 | 	F1: 0.9265
+F1_macro_test:0.04704172145062555
+F1_macro_finetune:0.9217941079339028
+F1_macro_finetune:0.9153265068087432
+F1_macro_finetune:0.918735869996887
+F1_macro_finetune:0.9096794561905802
+F1_macro_finetune:0.9262556696930274
+
+Epoch : 170	 | 	  finetune Loss: 0.0072	 | 	Acc: 0.0000	 | 	F1: 0.9263
+F1_macro_test:0.042171124254805285
+F1_macro_finetune:0.9185697417089022
+F1_macro_finetune:0.9244918136092867
+F1_macro_finetune:0.9340857887301902
+F1_macro_finetune:0.9224921409550306
+F1_macro_finetune:0.916135814723471
+
+Epoch : 175	 | 	  finetune Loss: 0.0067	 | 	Acc: 0.0000	 | 	F1: 0.9161
+F1_macro_test:0.04893243230133324
+F1_macro_finetune:0.9447557142658715
+F1_macro_finetune:0.9454492953409839
+F1_macro_finetune:0.9592727301565225
+F1_macro_finetune:0.9497382559123816
+F1_macro_finetune:0.9482556693573982
+
+Epoch : 180	 | 	  finetune Loss: 0.0064	 | 	Acc: 0.0000	 | 	F1: 0.9483
+F1_macro_test:0.045492087272528375
+F1_macro_finetune:0.9514845838803805
+F1_macro_finetune:0.9586498852206778
+F1_macro_finetune:0.9521467435862105
+F1_macro_finetune:0.9589220710747364
+F1_macro_finetune:0.9552531990585686
+
+Epoch : 185	 | 	  finetune Loss: 0.0058	 | 	Acc: 0.0000	 | 	F1: 0.9553
+F1_macro_test:0.04189515673804609
+F1_macro_finetune:0.9504867811230785
+F1_macro_finetune:0.9629397624421708
+F1_macro_finetune:0.9599667025847186
+F1_macro_finetune:0.9667069690046364
+F1_macro_finetune:0.9631369211056608
+
+Epoch : 190	 | 	  finetune Loss: 0.0052	 | 	Acc: 0.0000	 | 	F1: 0.9631
+F1_macro_test:0.04388288888954975
+F1_macro_finetune:0.9706445283582398
+F1_macro_finetune:0.9737521578097524
+F1_macro_finetune:0.954965172048301
+F1_macro_finetune:0.9640748672266838
+F1_macro_finetune:0.9671136346276359
+
+Epoch : 195	 | 	  finetune Loss: 0.0050	 | 	Acc: 0.0000	 | 	F1: 0.9671
+F1_macro_test:0.04587929042722942
+F1_macro_finetune:0.9742180264811179
+F1_macro_finetune:0.9801558140049044
+F1_macro_finetune:0.9670413148978385
+F1_macro_finetune:0.9756973727887314
+F1_macro_finetune:0.9675263256348111
+
+Epoch : 200	 | 	  finetune Loss: 0.0046	 | 	Acc: 0.0000	 | 	F1: 0.9675
+F1_macro_test:0.04562074678255611
+F1_macro_finetune:0.9788740756821245
+F1_macro_finetune:0.9668484138871037
+F1_macro_finetune:0.9718801889173728
+F1_macro_finetune:0.979669652760018
+F1_macro_finetune:0.9803410087189728
+
+Epoch : 205	 | 	  finetune Loss: 0.0042	 | 	Acc: 0.0000	 | 	F1: 0.9803
+F1_macro_test:0.04238601897400379
+F1_macro_finetune:0.9879786539164478
+F1_macro_finetune:0.9812745688784529
+F1_macro_finetune:0.9847430257443079
+F1_macro_finetune:0.9812312550122818
+F1_macro_finetune:0.9825537337776891
+
+Epoch : 210	 | 	  finetune Loss: 0.0039	 | 	Acc: 0.0000	 | 	F1: 0.9826
+F1_macro_test:0.04166296213912834
+F1_macro_finetune:0.9834487004860305
+F1_macro_finetune:0.9881253174133932
+F1_macro_finetune:0.9872905733947381
+F1_macro_finetune:0.9874648205222989
+F1_macro_finetune:0.9866192630123222
+
+Epoch : 215	 | 	  finetune Loss: 0.0036	 | 	Acc: 0.0000	 | 	F1: 0.9866
+F1_macro_test:0.03994711583262907
+F1_macro_finetune:0.985406877953116
+F1_macro_finetune:0.9895358828491148
+F1_macro_finetune:0.9858969967282414
+F1_macro_finetune:0.9853971996296133
+F1_macro_finetune:0.9847588783008353
+
+Epoch : 220	 | 	  finetune Loss: 0.0033	 | 	Acc: 0.0000	 | 	F1: 0.9848
+F1_macro_test:0.04526714858038888
+F1_macro_finetune:0.9921658317876504
+F1_macro_finetune:0.9891802810618663
+F1_macro_finetune:0.9878130054758063
+F1_macro_finetune:0.9900714323612528
+F1_macro_finetune:0.9869612254516903
+
+Epoch : 225	 | 	  finetune Loss: 0.0031	 | 	Acc: 0.0000	 | 	F1: 0.9870
+F1_macro_test:0.041763648844249414
+F1_macro_finetune:0.9844794406681635
+F1_macro_finetune:0.9917262676751882
+F1_macro_finetune:0.9922863938040499
+F1_macro_finetune:0.9927444497204564
+F1_macro_finetune:0.9893920030544198
+
+Epoch : 230	 | 	  finetune Loss: 0.0031	 | 	Acc: 0.0000	 | 	F1: 0.9894
+F1_macro_test:0.04047549956164579
+F1_macro_finetune:0.9956930398993016
+F1_macro_finetune:0.9944639278077659
+F1_macro_finetune:0.9944363668248855
+F1_macro_finetune:0.9958562555448449
+F1_macro_finetune:0.9947105435713722
+
+Epoch : 235	 | 	  finetune Loss: 0.0028	 | 	Acc: 0.0000	 | 	F1: 0.9947
+F1_macro_test:0.04258133538830683
+F1_macro_finetune:0.9915854120548906
+F1_macro_finetune:0.9954742092097635
+F1_macro_finetune:0.9915229602108525
+F1_macro_finetune:0.9925985346250435
+F1_macro_finetune:0.9966697061246003
+
+Epoch : 240	 | 	  finetune Loss: 0.0025	 | 	Acc: 0.0000	 | 	F1: 0.9967
+F1_macro_test:0.04576883491024279
+F1_macro_finetune:0.9930210786822948
+F1_macro_finetune:0.9964627143418221
+F1_macro_finetune:0.9949374649777795
+F1_macro_finetune:0.994856574791564
+F1_macro_finetune:0.9965478875070022
+
+Epoch : 245	 | 	  finetune Loss: 0.0023	 | 	Acc: 0.0000	 | 	F1: 0.9965
+F1_macro_test:0.040985915439650245
+F1_macro_finetune:0.99360714017556
+F1_macro_finetune:0.9961641689736033
+F1_macro_finetune:0.9956983227247286
+F1_macro_finetune:0.9973691491177372
+F1_macro_finetune:0.99685920844568
+
+Epoch : 250	 | 	  finetune Loss: 0.0022	 | 	Acc: 0.0000	 | 	F1: 0.9969
+F1_macro_test:0.03997197838821022
+F1_macro_finetune:0.9964043946917763
+F1_macro_finetune:0.9982671838867927
+F1_macro_finetune:0.996486436732442
+F1_macro_finetune:0.9968041228976656
+F1_macro_finetune:0.9964645194875326
+
+Epoch : 255	 | 	  finetune Loss: 0.0021	 | 	Acc: 0.0000	 | 	F1: 0.9965
+F1_macro_test:0.04483945248301698
+F1_macro_finetune:0.9971544221479678
+F1_macro_finetune:0.9969353514996903
+F1_macro_finetune:0.9972497439242389
+F1_macro_finetune:0.9950964830128243
+F1_macro_finetune:0.9962090324377421
+
+Epoch : 260	 | 	  finetune Loss: 0.0020	 | 	Acc: 0.0000	 | 	F1: 0.9962
+F1_macro_test:0.04115781505589499
+F1_macro_finetune:0.9935124683791097
+F1_macro_finetune:0.9971986201895954
+F1_macro_finetune:0.9978801299432152
+F1_macro_finetune:0.998008713226489
+F1_macro_finetune:0.9966210469045386
+
+Epoch : 265	 | 	  finetune Loss: 0.0018	 | 	Acc: 0.0000	 | 	F1: 0.9966
+F1_macro_test:0.04709706716420447
+F1_macro_finetune:0.9973657125184728
+F1_macro_finetune:0.9969441159622406
+F1_macro_finetune:0.9988386043119178
+F1_macro_finetune:0.9991932434489218
+F1_macro_finetune:0.9985540430439421
+
+Epoch : 270	 | 	  finetune Loss: 0.0017	 | 	Acc: 0.0000	 | 	F1: 0.9986
+F1_macro_test:0.0396553435699744
+F1_macro_finetune:0.9988011254862067
+F1_macro_finetune:0.9982227316938449
+F1_macro_finetune:0.995855536237503
+F1_macro_finetune:0.9983926688235308
+F1_macro_finetune:0.9994076010942191
+
+Epoch : 275	 | 	  finetune Loss: 0.0015	 | 	Acc: 0.0000	 | 	F1: 0.9994
+F1_macro_test:0.043167795078968514
+F1_macro_finetune:0.9970875231032746
+F1_macro_finetune:0.9997093633903676
+EP277 - Better Testing:  F1 = 0.9997
+F1_macro_finetune:0.9981541860241919
+F1_macro_finetune:0.9984952989228932
+F1_macro_finetune:0.9990737334442659
+
+Epoch : 280	 | 	  finetune Loss: 0.0014	 | 	Acc: 0.0000	 | 	F1: 0.9991
+F1_macro_test:0.043309174227313244
+F1_macro_finetune:0.9977544279446134
+F1_macro_finetune:0.9984986934276826
+F1_macro_finetune:0.9995679532473296
+F1_macro_finetune:0.9991680440397321
+F1_macro_finetune:0.9993319545064231
+
+Epoch : 285	 | 	  finetune Loss: 0.0013	 | 	Acc: 0.0000	 | 	F1: 0.9993
+F1_macro_test:0.044875107990970636
+F1_macro_finetune:0.9986332667661358
+F1_macro_finetune:0.9995392283189942
+F1_macro_finetune:0.9994881800269105
+F1_macro_finetune:0.9991174813218223
+F1_macro_finetune:0.9987587559436026
+
+Epoch : 290	 | 	  finetune Loss: 0.0013	 | 	Acc: 0.0000	 | 	F1: 0.9988
+F1_macro_test:0.042882979089863625
+F1_macro_finetune:0.9954058421508709
+F1_macro_finetune:0.9975011649151987
+F1_macro_finetune:0.9989643349597549
+F1_macro_finetune:0.9985093619695562
+F1_macro_finetune:0.9993408597264961
+
+Epoch : 295	 | 	  finetune Loss: 0.0013	 | 	Acc: 0.0000	 | 	F1: 0.9993
+F1_macro_test:0.04567074627305765
+F1_macro_finetune:0.9998351387684992
+EP296 - Better Testing:  F1 = 0.9998
+F1_macro_finetune:0.9990950029550636
+F1_macro_finetune:0.9986255994347697
+F1_macro_finetune:0.9980823511067515
+F1_macro_finetune:0.9990124087535821
+
+Epoch : 300	 | 	  finetune Loss: 0.0011	 | 	Acc: 0.0000	 | 	F1: 0.9990
+F1_macro_test:0.044363844557767845
+Fine-tuning ended ....
+====================================================================================================
+EP8 - Best Testing: Acc=0.0000| Precision = 0.0000 | Recall = 0.0000 | F1 = 0.0852
+0.08522477896913479
+[0.49623271340009534, 0.4895611939478815, 0.5024572557779878, 0.6881677878907797, 0.520656189897763, 0.5251044277360066, 0.5441095890410959, 0.5001327371803829, 0.5138121546961326, 0.49786907916877, 0.4813653136531365, 0.5515103453247784, 0.5446581196581197, 0.4017527675276753, 0.5079780252349901, 0.5100112572522683, 0.5676141619712388, 0.21533855366190696, 0.4762403750620963, 0.5920943170592212, 0.5238250323741287, 0.5097503423317684, 0.4926488833746898]
+====================================================================================================
+Pre-training Epoch: 9	 Train Loss: 3.1286	 CL Loss: 4.8822	 RB Loss: 0.2542
+
+Pre-training Epoch: 10	 Train Loss: 3.1201	 CL Loss: 4.8750	 RB Loss: 0.2531
+
+Fine-tuning started ....
+F1_macro_finetune:0.09642621746759635
+F1_macro_finetune:0.10957728789083863
+F1_macro_finetune:0.11531757364581235
+F1_macro_finetune:0.11191497621901887
+F1_macro_finetune:0.13101311810177477
+
+Epoch : 5	 | 	  finetune Loss: 0.0539	 | 	Acc: 0.0000	 | 	F1: 0.1310
+F1_macro_test:0.07768400640014801
+F1_macro_finetune:0.13743825459265663
+F1_macro_finetune:0.15639810793645156
+F1_macro_finetune:0.16548557710943984
+F1_macro_finetune:0.16068014323893598
+F1_macro_finetune:0.17192922640796188
+
+Epoch : 10	 | 	  finetune Loss: 0.0451	 | 	Acc: 0.0000	 | 	F1: 0.1719
+F1_macro_test:0.07711351701932208
+F1_macro_finetune:0.17548381197989862
+F1_macro_finetune:0.1779847989163385
+F1_macro_finetune:0.18601684704667712
+F1_macro_finetune:0.18375423343171365
+F1_macro_finetune:0.1914283666036147
+
+Epoch : 15	 | 	  finetune Loss: 0.0418	 | 	Acc: 0.0000	 | 	F1: 0.1914
+F1_macro_test:0.08363598733015708
+F1_macro_finetune:0.20088627791353572
+F1_macro_finetune:0.20003322744412008
+F1_macro_finetune:0.20281917482342565
+F1_macro_finetune:0.21729323354179703
+F1_macro_finetune:0.21082236379812277
+
+Epoch : 20	 | 	  finetune Loss: 0.0395	 | 	Acc: 0.0000	 | 	F1: 0.2108
+F1_macro_test:0.0769936663611077
+F1_macro_finetune:0.20975453773599687
+F1_macro_finetune:0.2189894222035111
+F1_macro_finetune:0.23342914666558645
+F1_macro_finetune:0.23431070211631302
+F1_macro_finetune:0.22371231786319648
+
+Epoch : 25	 | 	  finetune Loss: 0.0377	 | 	Acc: 0.0000	 | 	F1: 0.2237
+F1_macro_test:0.07317989140361146
+F1_macro_finetune:0.2356165849663507
+F1_macro_finetune:0.24522592728102438
+F1_macro_finetune:0.24339035458337477
+F1_macro_finetune:0.2517736270413965
+F1_macro_finetune:0.2543815750404237
+
+Epoch : 30	 | 	  finetune Loss: 0.0364	 | 	Acc: 0.0000	 | 	F1: 0.2544
+F1_macro_test:0.07309799383665727
+F1_macro_finetune:0.25311778356292136
+F1_macro_finetune:0.24705822832253807
+F1_macro_finetune:0.2534379989883191
+F1_macro_finetune:0.258150068951299
+F1_macro_finetune:0.264836457430477
+
+Epoch : 35	 | 	  finetune Loss: 0.0352	 | 	Acc: 0.0000	 | 	F1: 0.2648
+F1_macro_test:0.0698531305294744
+F1_macro_finetune:0.2564036254265436
+F1_macro_finetune:0.27095759075542086
+F1_macro_finetune:0.27490258552881847
+F1_macro_finetune:0.27749827512289027
+F1_macro_finetune:0.2763273832515968
+
+Epoch : 40	 | 	  finetune Loss: 0.0340	 | 	Acc: 0.0000	 | 	F1: 0.2763
+F1_macro_test:0.06586009867468864
+F1_macro_finetune:0.2826625911768701
+F1_macro_finetune:0.2752557569083373
+F1_macro_finetune:0.2865545041326407
+F1_macro_finetune:0.29121084416569987
+F1_macro_finetune:0.2964693939378353
+
+Epoch : 45	 | 	  finetune Loss: 0.0330	 | 	Acc: 0.0000	 | 	F1: 0.2965
+F1_macro_test:0.06251041300349519
+F1_macro_finetune:0.27787321011625526
+F1_macro_finetune:0.2873785393690956
+F1_macro_finetune:0.30840265772223463
+F1_macro_finetune:0.3029325586470739
+F1_macro_finetune:0.31322152359282546
+
+Epoch : 50	 | 	  finetune Loss: 0.0318	 | 	Acc: 0.0000	 | 	F1: 0.3132
+F1_macro_test:0.06771210683091351
+F1_macro_finetune:0.31512584509978014
+F1_macro_finetune:0.30155468192496715
+F1_macro_finetune:0.30771424938044406
+F1_macro_finetune:0.34389593850651307
+F1_macro_finetune:0.30470373438773857
+
+Epoch : 55	 | 	  finetune Loss: 0.0306	 | 	Acc: 0.0000	 | 	F1: 0.3047
+F1_macro_test:0.06368169575746442
+F1_macro_finetune:0.32217055750863677
+F1_macro_finetune:0.3262822745204377
+F1_macro_finetune:0.3189750478867166
+F1_macro_finetune:0.30604541796709833
+F1_macro_finetune:0.3339802774360795
+
+Epoch : 60	 | 	  finetune Loss: 0.0295	 | 	Acc: 0.0000	 | 	F1: 0.3340
+F1_macro_test:0.06688206973324537
+F1_macro_finetune:0.3358264041630707
+F1_macro_finetune:0.32415505553490115
+F1_macro_finetune:0.34448942294523094
+F1_macro_finetune:0.3462010467600163
+F1_macro_finetune:0.3450330402957484
+
+Epoch : 65	 | 	  finetune Loss: 0.0283	 | 	Acc: 0.0000	 | 	F1: 0.3450
+F1_macro_test:0.06273860963225485
+F1_macro_finetune:0.3453494282697015
+F1_macro_finetune:0.37800197322829165
+F1_macro_finetune:0.34987451976349904
+F1_macro_finetune:0.38526043249159114
+F1_macro_finetune:0.37013288018104523
+
+Epoch : 70	 | 	  finetune Loss: 0.0271	 | 	Acc: 0.0000	 | 	F1: 0.3701
+F1_macro_test:0.0665265789488347
+F1_macro_finetune:0.37391051611464715
+F1_macro_finetune:0.3810457391609092
+F1_macro_finetune:0.4080378709021398
+F1_macro_finetune:0.396969859000603
+F1_macro_finetune:0.4105672802609148
+
+Epoch : 75	 | 	  finetune Loss: 0.0260	 | 	Acc: 0.0000	 | 	F1: 0.4106
+F1_macro_test:0.05740731114716745
+F1_macro_finetune:0.41608007467840086
+F1_macro_finetune:0.4261176259140917
+F1_macro_finetune:0.4560271454836806
+F1_macro_finetune:0.4220696157695835
+F1_macro_finetune:0.44729464157673215
+
+Epoch : 80	 | 	  finetune Loss: 0.0248	 | 	Acc: 0.0000	 | 	F1: 0.4473
+F1_macro_test:0.06070500970883792
+F1_macro_finetune:0.4303626271130449
+F1_macro_finetune:0.448149612855306
+F1_macro_finetune:0.44804139465025644
+F1_macro_finetune:0.4589099454865963
+F1_macro_finetune:0.5059603976884504
+
+Epoch : 85	 | 	  finetune Loss: 0.0238	 | 	Acc: 0.0000	 | 	F1: 0.5060
+F1_macro_test:0.06172993488473053
+F1_macro_finetune:0.4746202109299019
+F1_macro_finetune:0.4881158368971325
+F1_macro_finetune:0.5336423612190161
+F1_macro_finetune:0.4675559517599506
+F1_macro_finetune:0.49718752866880417
+
+Epoch : 90	 | 	  finetune Loss: 0.0225	 | 	Acc: 0.0000	 | 	F1: 0.4972
+F1_macro_test:0.0601294834961281
+F1_macro_finetune:0.5021072981241875
+F1_macro_finetune:0.48789214033205747
+F1_macro_finetune:0.5365178858344966
+F1_macro_finetune:0.5824307742332244
+F1_macro_finetune:0.507773896580004
+
+Epoch : 95	 | 	  finetune Loss: 0.0212	 | 	Acc: 0.0000	 | 	F1: 0.5078
+F1_macro_test:0.05184806308387409
+F1_macro_finetune:0.55239113541855
+F1_macro_finetune:0.5574628083946459
+F1_macro_finetune:0.5958229399245073
+F1_macro_finetune:0.538065640071441
+F1_macro_finetune:0.5903454939500015
+
+Epoch : 100	 | 	  finetune Loss: 0.0201	 | 	Acc: 0.0000	 | 	F1: 0.5903
+F1_macro_test:0.05432125093362735
+F1_macro_finetune:0.5092676728744184
+F1_macro_finetune:0.5794818772528914
+F1_macro_finetune:0.615353710282993
+F1_macro_finetune:0.587992866159676
+F1_macro_finetune:0.6247225507460783
+
+Epoch : 105	 | 	  finetune Loss: 0.0191	 | 	Acc: 0.0000	 | 	F1: 0.6247
+F1_macro_test:0.052670549448444196
+F1_macro_finetune:0.5983243991417968
+F1_macro_finetune:0.5858521917576938
+F1_macro_finetune:0.5534542226014343
+F1_macro_finetune:0.6575798674782917
+F1_macro_finetune:0.6065052073088046
+
+Epoch : 110	 | 	  finetune Loss: 0.0179	 | 	Acc: 0.0000	 | 	F1: 0.6065
+F1_macro_test:0.054772018203688135
+F1_macro_finetune:0.6181220265042707
+F1_macro_finetune:0.6696799182006145
+F1_macro_finetune:0.6350176352075113
+F1_macro_finetune:0.6761285301173395
+F1_macro_finetune:0.6871267684700585
+
+Epoch : 115	 | 	  finetune Loss: 0.0168	 | 	Acc: 0.0000	 | 	F1: 0.6871
+F1_macro_test:0.055886692046225435
+F1_macro_finetune:0.6442819505924974
+F1_macro_finetune:0.6671836127072347
+F1_macro_finetune:0.6881294440804643
+F1_macro_finetune:0.6677312157144756
+F1_macro_finetune:0.7089215259768455
+
+Epoch : 120	 | 	  finetune Loss: 0.0160	 | 	Acc: 0.0000	 | 	F1: 0.7089
+F1_macro_test:0.05479733608229346
+F1_macro_finetune:0.7117209145790618
+F1_macro_finetune:0.7000508171593737
+F1_macro_finetune:0.7299413110201322
+F1_macro_finetune:0.729901637673683
+F1_macro_finetune:0.7421027675710172
+
+Epoch : 125	 | 	  finetune Loss: 0.0148	 | 	Acc: 0.0000	 | 	F1: 0.7421
+F1_macro_test:0.053646464027812375
+F1_macro_finetune:0.7397306194412623
+F1_macro_finetune:0.73999645168481
+F1_macro_finetune:0.7455105919230667
+F1_macro_finetune:0.7156213950369639
+F1_macro_finetune:0.7624278706844343
+
+Epoch : 130	 | 	  finetune Loss: 0.0137	 | 	Acc: 0.0000	 | 	F1: 0.7624
+F1_macro_test:0.049239892609222694
+F1_macro_finetune:0.7701578639144869
+F1_macro_finetune:0.7641870215106537
+F1_macro_finetune:0.7797355647065999
+F1_macro_finetune:0.7965880801587871
+F1_macro_finetune:0.7600065232800245
+
+Epoch : 135	 | 	  finetune Loss: 0.0131	 | 	Acc: 0.0000	 | 	F1: 0.7600
+F1_macro_test:0.049233824812699806
+F1_macro_finetune:0.7923699032805469
+F1_macro_finetune:0.8113954157090335
+F1_macro_finetune:0.7940192960641262
+F1_macro_finetune:0.7818664764287372
+F1_macro_finetune:0.7989989122112852
+
+Epoch : 140	 | 	  finetune Loss: 0.0119	 | 	Acc: 0.0000	 | 	F1: 0.7990
+F1_macro_test:0.0521594907866608
+F1_macro_finetune:0.8453202746165617
+F1_macro_finetune:0.8371041027049321
+F1_macro_finetune:0.8227288736886832
+F1_macro_finetune:0.8386905644179111
+F1_macro_finetune:0.8645961129477394
+
+Epoch : 145	 | 	  finetune Loss: 0.0113	 | 	Acc: 0.0000	 | 	F1: 0.8646
+F1_macro_test:0.04957850412486783
+F1_macro_finetune:0.8427517833452055
+F1_macro_finetune:0.8577444247427323
+F1_macro_finetune:0.8414503166076281
+F1_macro_finetune:0.8365744399797248
+F1_macro_finetune:0.870310162516362
+
+Epoch : 150	 | 	  finetune Loss: 0.0105	 | 	Acc: 0.0000	 | 	F1: 0.8703
+F1_macro_test:0.04796056218996635
+F1_macro_finetune:0.8725551661336131
+F1_macro_finetune:0.8658869928242676
+F1_macro_finetune:0.8839414339776954
+F1_macro_finetune:0.8838550089066715
+F1_macro_finetune:0.8817855363801144
+
+Epoch : 155	 | 	  finetune Loss: 0.0097	 | 	Acc: 0.0000	 | 	F1: 0.8818
+F1_macro_test:0.05015678742084795
+F1_macro_finetune:0.8884338978773264
+F1_macro_finetune:0.8719996892493195
+F1_macro_finetune:0.9071036531064938
+F1_macro_finetune:0.8915677118820527
+F1_macro_finetune:0.8954349862150615
+
+Epoch : 160	 | 	  finetune Loss: 0.0090	 | 	Acc: 0.0000	 | 	F1: 0.8954
+F1_macro_test:0.053690894906109385
+F1_macro_finetune:0.8916611932858298
+F1_macro_finetune:0.9157654924032915
+F1_macro_finetune:0.9111828311323967
+F1_macro_finetune:0.91487947789027
+F1_macro_finetune:0.9162929273168537
+
+Epoch : 165	 | 	  finetune Loss: 0.0083	 | 	Acc: 0.0000	 | 	F1: 0.9163
+F1_macro_test:0.05190553832773572
+F1_macro_finetune:0.9169556390767195
+F1_macro_finetune:0.9122064690298247
+F1_macro_finetune:0.9156606955924105
+F1_macro_finetune:0.9223926964089755
+F1_macro_finetune:0.914281315304477
+
+Epoch : 170	 | 	  finetune Loss: 0.0078	 | 	Acc: 0.0000	 | 	F1: 0.9143
+F1_macro_test:0.04951912143072182
+F1_macro_finetune:0.9379582935380081
+F1_macro_finetune:0.9228456694080365
+F1_macro_finetune:0.9353013684618745
+F1_macro_finetune:0.9351377972445981
+F1_macro_finetune:0.9309925502471619
+
+Epoch : 175	 | 	  finetune Loss: 0.0075	 | 	Acc: 0.0000	 | 	F1: 0.9310
+F1_macro_test:0.04484144039079324
+F1_macro_finetune:0.9425015035833332
+F1_macro_finetune:0.9503131438314592
+F1_macro_finetune:0.9349806684728357
+F1_macro_finetune:0.938199428914911
+F1_macro_finetune:0.9477959098565714
+
+Epoch : 180	 | 	  finetune Loss: 0.0067	 | 	Acc: 0.0000	 | 	F1: 0.9478
+F1_macro_test:0.051530165651009804
+F1_macro_finetune:0.9437279156773535
+F1_macro_finetune:0.9585923277439102
+F1_macro_finetune:0.9545461896281581
+F1_macro_finetune:0.9599581512572553
+F1_macro_finetune:0.9598988068357939
+
+Epoch : 185	 | 	  finetune Loss: 0.0061	 | 	Acc: 0.0000	 | 	F1: 0.9599
+F1_macro_test:0.04541723631903721
+F1_macro_finetune:0.9674093556893443
+F1_macro_finetune:0.9678710187017122
+F1_macro_finetune:0.9657806854170393
+F1_macro_finetune:0.9629592061129035
+F1_macro_finetune:0.951274171073819
+
+Epoch : 190	 | 	  finetune Loss: 0.0057	 | 	Acc: 0.0000	 | 	F1: 0.9513
+F1_macro_test:0.04820974612010143
+F1_macro_finetune:0.9700144482639049
+F1_macro_finetune:0.9662448303515688
+F1_macro_finetune:0.969829050118791
+F1_macro_finetune:0.9758757771522124
+F1_macro_finetune:0.9796707162681164
+
+Epoch : 195	 | 	  finetune Loss: 0.0052	 | 	Acc: 0.0000	 | 	F1: 0.9797
+F1_macro_test:0.04846555337283954
+F1_macro_finetune:0.976996125077264
+F1_macro_finetune:0.9830796272872465
+F1_macro_finetune:0.971527373640043
+F1_macro_finetune:0.9790549371651618
+F1_macro_finetune:0.9772855735025445
+
+Epoch : 200	 | 	  finetune Loss: 0.0049	 | 	Acc: 0.0000	 | 	F1: 0.9773
+F1_macro_test:0.04470926522925067
+F1_macro_finetune:0.9674487759779974
+F1_macro_finetune:0.9786801126986534
+F1_macro_finetune:0.9730214677620819
+F1_macro_finetune:0.9821564845389473
+F1_macro_finetune:0.9869394975946671
+
+Epoch : 205	 | 	  finetune Loss: 0.0044	 | 	Acc: 0.0000	 | 	F1: 0.9869
+F1_macro_test:0.0445383950457673
+F1_macro_finetune:0.975452915031562
+F1_macro_finetune:0.9763720469625822
+F1_macro_finetune:0.9557435502718342
+F1_macro_finetune:0.985592925731538
+F1_macro_finetune:0.9825547091981914
+
+Epoch : 210	 | 	  finetune Loss: 0.0043	 | 	Acc: 0.0000	 | 	F1: 0.9826
+F1_macro_test:0.04967957191476961
+F1_macro_finetune:0.9826764117342235
+F1_macro_finetune:0.9867183490139273
+F1_macro_finetune:0.9884606142342001
+F1_macro_finetune:0.9853797325330226
+F1_macro_finetune:0.9862970637817803
+
+Epoch : 215	 | 	  finetune Loss: 0.0039	 | 	Acc: 0.0000	 | 	F1: 0.9863
+F1_macro_test:0.04651796514469685
+F1_macro_finetune:0.9856014752638814
+F1_macro_finetune:0.9893463337301667
+F1_macro_finetune:0.9886008800618341
+F1_macro_finetune:0.9897611999720415
+F1_macro_finetune:0.9815875539121315
+
+Epoch : 220	 | 	  finetune Loss: 0.0036	 | 	Acc: 0.0000	 | 	F1: 0.9816
+F1_macro_test:0.047606057910020566
+F1_macro_finetune:0.9880718555824377
+F1_macro_finetune:0.980421302829231
+F1_macro_finetune:0.9907399382539043
+F1_macro_finetune:0.9867098129611437
+F1_macro_finetune:0.990989456899881
+
+Epoch : 225	 | 	  finetune Loss: 0.0034	 | 	Acc: 0.0000	 | 	F1: 0.9910
+F1_macro_test:0.04717064220963664
+F1_macro_finetune:0.9854233867695383
+F1_macro_finetune:0.9934975074327993
+F1_macro_finetune:0.9936811987817199
+F1_macro_finetune:0.9903872859366578
+F1_macro_finetune:0.9895267259453336
+
+Epoch : 230	 | 	  finetune Loss: 0.0032	 | 	Acc: 0.0000	 | 	F1: 0.9895
+F1_macro_test:0.048303017180611266
+F1_macro_finetune:0.9907788712639247
+F1_macro_finetune:0.9890273092483198
+F1_macro_finetune:0.9937767452243395
+F1_macro_finetune:0.9927806306118103
+F1_macro_finetune:0.9935786643743347
+
+Epoch : 235	 | 	  finetune Loss: 0.0030	 | 	Acc: 0.0000	 | 	F1: 0.9936
+F1_macro_test:0.048199666136331434
+F1_macro_finetune:0.993080376341301
+F1_macro_finetune:0.99000350756842
+F1_macro_finetune:0.9920787138449845
+F1_macro_finetune:0.9898534690748455
+F1_macro_finetune:0.9914403239283406
+
+Epoch : 240	 | 	  finetune Loss: 0.0028	 | 	Acc: 0.0000	 | 	F1: 0.9914
+F1_macro_test:0.04802847341508407
+F1_macro_finetune:0.9966623284520988
+F1_macro_finetune:0.9946800967530571
+F1_macro_finetune:0.9929622452707069
+F1_macro_finetune:0.9947091360400692
+F1_macro_finetune:0.9881900929823167
+
+Epoch : 245	 | 	  finetune Loss: 0.0026	 | 	Acc: 0.0000	 | 	F1: 0.9882
+F1_macro_test:0.04997256852867817
+F1_macro_finetune:0.9948821856269554
+F1_macro_finetune:0.9930319777634401
+F1_macro_finetune:0.9959198618760753
+F1_macro_finetune:0.9967365023897428
+F1_macro_finetune:0.9968944564476871
+
+Epoch : 250	 | 	  finetune Loss: 0.0024	 | 	Acc: 0.0000	 | 	F1: 0.9969
+F1_macro_test:0.0464576053713285
+F1_macro_finetune:0.9969034408098782
+F1_macro_finetune:0.9930387044146631
+F1_macro_finetune:0.9947697202539798
+F1_macro_finetune:0.9961499798184833
+F1_macro_finetune:0.9938519307267668
+
+Epoch : 255	 | 	  finetune Loss: 0.0024	 | 	Acc: 0.0000	 | 	F1: 0.9939
+F1_macro_test:0.04685162997724566
+F1_macro_finetune:0.9970547329184888
+F1_macro_finetune:0.9965916694046848
+F1_macro_finetune:0.9973794227295351
+F1_macro_finetune:0.9986263204700974
+F1_macro_finetune:0.9970403604643004
+
+Epoch : 260	 | 	  finetune Loss: 0.0020	 | 	Acc: 0.0000	 | 	F1: 0.9970
+F1_macro_test:0.045231749900414134
+F1_macro_finetune:0.9974515869833445
+F1_macro_finetune:0.9975624702169587
+F1_macro_finetune:0.9973380069879122
+F1_macro_finetune:0.9976395576877634
+F1_macro_finetune:0.9948303057925744
+
+Epoch : 265	 | 	  finetune Loss: 0.0020	 | 	Acc: 0.0000	 | 	F1: 0.9948
+F1_macro_test:0.04738574779041711
+F1_macro_finetune:0.9952771765012298
+F1_macro_finetune:0.9980043803179568
+F1_macro_finetune:0.9979201643317125
+F1_macro_finetune:0.9979168905598848
+F1_macro_finetune:0.9976943893375435
+
+Epoch : 270	 | 	  finetune Loss: 0.0017	 | 	Acc: 0.0000	 | 	F1: 0.9977
+F1_macro_test:0.04852245153565292
+F1_macro_finetune:0.994320848539352
+F1_macro_finetune:0.9979191366967991
+F1_macro_finetune:0.9973396652333804
+F1_macro_finetune:0.9969819024663369
+F1_macro_finetune:0.998470315863468
+
+Epoch : 275	 | 	  finetune Loss: 0.0017	 | 	Acc: 0.0000	 | 	F1: 0.9985
+F1_macro_test:0.048388039877752656
+F1_macro_finetune:0.9978776521888869
+F1_macro_finetune:0.9987362899854325
+F1_macro_finetune:0.999313937069994
+F1_macro_finetune:0.9976007317147529
+F1_macro_finetune:0.9977641412044456
+
+Epoch : 280	 | 	  finetune Loss: 0.0016	 | 	Acc: 0.0000	 | 	F1: 0.9978
+F1_macro_test:0.04651614442553134
+F1_macro_finetune:0.9968437517087124
+F1_macro_finetune:0.9962707685354042
+F1_macro_finetune:0.9989424128343036
+F1_macro_finetune:0.9971355571396338
+F1_macro_finetune:0.9993002308347757
+
+Epoch : 285	 | 	  finetune Loss: 0.0014	 | 	Acc: 0.0000	 | 	F1: 0.9993
+F1_macro_test:0.04678868681071511
+F1_macro_finetune:0.9987145922527259
+F1_macro_finetune:0.9972078119475604
+F1_macro_finetune:0.9981686489596874
+F1_macro_finetune:0.9972934106935739
+F1_macro_finetune:0.9987148408417391
+
+Epoch : 290	 | 	  finetune Loss: 0.0014	 | 	Acc: 0.0000	 | 	F1: 0.9987
+F1_macro_test:0.04210313987856165
+F1_macro_finetune:0.9993926903445416
+F1_macro_finetune:0.997741633529016
+F1_macro_finetune:0.9989768586876144
+F1_macro_finetune:0.9984986330921659
+F1_macro_finetune:0.99811901460041
+
+Epoch : 295	 | 	  finetune Loss: 0.0014	 | 	Acc: 0.0000	 | 	F1: 0.9981
+F1_macro_test:0.0505040081854395
+F1_macro_finetune:0.9972291849813726
+F1_macro_finetune:0.9983535758408574
+F1_macro_finetune:0.9989827236843757
+F1_macro_finetune:0.9983603965492296
+F1_macro_finetune:0.9992189321511944
+
+Epoch : 300	 | 	  finetune Loss: 0.0013	 | 	Acc: 0.0000	 | 	F1: 0.9992
+F1_macro_test:0.04803334280656083
+Fine-tuning ended ....
+====================================================================================================
+EP10 - Best Testing: Acc=0.0000| Precision = 0.0000 | Recall = 0.0000 | F1 = 0.0852
+0.08522477896913479
+[0.49623271340009534, 0.4895611939478815, 0.5024572557779878, 0.6881677878907797, 0.520656189897763, 0.5251044277360066, 0.5441095890410959, 0.5001327371803829, 0.5138121546961326, 0.49786907916877, 0.4813653136531365, 0.5515103453247784, 0.5446581196581197, 0.4017527675276753, 0.5079780252349901, 0.5100112572522683, 0.5676141619712388, 0.21533855366190696, 0.4762403750620963, 0.5920943170592212, 0.5238250323741287, 0.5097503423317684, 0.4926488833746898]
+====================================================================================================
+[0, 0, 0, 0.08522477896913479, 0, 0, [0.49623271340009534, 0.4895611939478815, 0.5024572557779878, 0.6881677878907797, 0.520656189897763, 0.5251044277360066, 0.5441095890410959, 0.5001327371803829, 0.5138121546961326, 0.49786907916877, 0.4813653136531365, 0.5515103453247784, 0.5446581196581197, 0.4017527675276753, 0.5079780252349901, 0.5100112572522683, 0.5676141619712388, 0.21533855366190696, 0.4762403750620963, 0.5920943170592212, 0.5238250323741287, 0.5097503423317684, 0.4926488833746898]]
