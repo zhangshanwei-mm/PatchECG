@@ -211,5 +211,19 @@ python eva_model.py -p1 ../eva/ex1/picture/AUC_3fold_layout_2 -p2 ../eva/ex1/tab
 
 /baseline/ECGFounder/PatchEncoder
 
+## Reference
+
+We appreciate your citations if you find our paper related and useful to your research!
+
+```
+@article{zhang2025masked,
+  title={Masked Training for Robust Arrhythmia Detection from Digitalized Multiple Layout ECG Images},
+  author={Zhang, Shanwei and Zhang, Deyun and Tao, Yirao and Wang, Kexin and Geng, Shijia and Li, Jun and Zhao, Qinghao and Liu, Xingpeng and Zhou, Yuxi and Hong, Shenda},
+  journal={arXiv preprint arXiv:2508.09165},
+  year={2025}
+}
+```
+
+
 
 
