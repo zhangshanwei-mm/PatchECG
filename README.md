@@ -1,7 +1,9 @@
 # PatchECG
 
-## 1、Framework Overview
+Electrocardiogram (ECG) as an important tool for diagnosing cardiovascular diseases such as arrhythmia. Due to the differences in ECG layouts used by different hospitals, the digitized signals exhibit asynchronous lead time and partial blackout loss, which poses a serious challenge to existing models. To address this challenge, the study introduced PatchECG, a framework for adaptive variable block count missing representation learning based on a masking training strategy, which automatically focuses on key patches with collaborative dependencies between leads, thereby achieving key recognition of arrhythmia in ECGs with different layouts. Experiments were conducted on the PTB-XL dataset and 21388 asynchronous ECG images generated using ECG image kit tool, using the 23 Subclasses as labels. The proposed method demonstrated strong robustness under different layouts, with average Area Under the Receiver Operating Characteristic Curve (AUROC) of 0.835 and remained stable (unchanged with layout changes). In external validation based on 400 real ECG images data from Chaoyang Hospital, the AUROC for atrial fibrillation diagnosis reached 0.778; On 12 x 1 layout ECGs, AUROC reaches 0.893. This result is superior to various classic interpolation and baseline methods, and compared to the current optimal large-scale pre-training model ECGFounder, it has improved by 0.111 and 0.19.
 
+## 1、Framework Overview
+![Framework Overview](./overview.png)
 
 ## 2、Data 
 
@@ -224,5 +226,6 @@ python code_v5_eva.py
 model 保存在网盘：
 
 code : https://github.com/PKUDigitalHealth/ECGFounder
+
 
 
