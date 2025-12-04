@@ -1,4 +1,70 @@
+# PatchECG
 
+## 1、Overview
+
+
+## 2、Data 
+
+1、PTB-XL ：https://physionet.org/content/ptb-xl/1.0.3/
+
+2、We used the tool provided by ECG-image-kit to generate 21388 ECG images with 3 x 4 layouts of different noise levels on the PTB-XL dataset, and further transformed these images into high-quality ECG signal data that can be used for subsequent analysis using the digital tool , which ranked first in the 2024 CINC competition.
+
+https://github.com/felixkrones/ECG-Digitiser
+
+3、chaoyang hospital AF
+
+## 3、Train
+
+model ：Save in the cloud and upload later
+
+The overall structure is modified based on PhysioNet Challenge 2024
+
+code_v5.py ：train subclass
+
+code_v5_AF.py：train AF
+
+code_v5_AF_eva.ipynb ：eva AF
+
+code_v5_eval.py ：eva
+
+
+
+**Train model：**
+
+```bash
+python -u train_model.py -d /data/ -m model -v --verbose
+```
+
+**Eva model：**
+
+```bash
+python eva_model.py -p1 ../eva/ex1/picture/AUC_3fold_layout_2 -p2 ../eva/ex1/table/sub_3fold.xlsx -l 2 -v --verbose
+```
+
+
+
+## 4、PatchECG is Highly Scalable
+
+**Ours-projection** ：
+
+/PatchECG/src/code_v5_projection.py
+
+**Ours-ECGFounder** ：
+
+/baseline/ECGFounder/PatchEncoder
+
+## 5、Reference
+
+We appreciate your citations if you find our paper related and useful to your research!
+
+```
+@article{zhang2025masked,
+  title={Masked Training for Robust Arrhythmia Detection from Digitalized Multiple Layout ECG Images},
+  author={Zhang, Shanwei and Zhang, Deyun and Tao, Yirao and Wang, Kexin and Geng, Shijia and Li, Jun and Zhao, Qinghao and Liu, Xingpeng and Zhou, Yuxi and Hong, Shenda},
+  journal={arXiv preprint arXiv:2508.09165},
+  year={2025}
+}
+```
 
 # Baseline
 
@@ -158,72 +224,4 @@ python code_v5_eva.py
 model 保存在网盘：
 
 code : https://github.com/PKUDigitalHealth/ECGFounder
-
-# PatchECG
-
-## 1、Data 
-
-1、PTB-XL ：https://physionet.org/content/ptb-xl/1.0.3/
-
-2、We used the tool provided by ECG-image-kit to generate 21388 ECG images with 3 x 4 layouts of different noise levels on the PTB-XL dataset, and further transformed these images into high-quality ECG signal data that can be used for subsequent analysis using the digital tool , which ranked first in the 2024 CINC competition.
-
-https://github.com/felixkrones/ECG-Digitiser
-
-3、chaoyang hospital AF
-
-## 2、Train
-
-model ：Save in the cloud and upload later
-
-The overall structure is modified based on PhysioNet Challenge 2024
-
-code_v5.py ：train subclass
-
-code_v5_AF.py：train AF
-
-code_v5_AF_eva.ipynb ：eva AF
-
-code_v5_eval.py ：eva
-
-
-
-**Train model：**
-
-```bash
-python -u train_model.py -d /data/ -m model -v --verbose
-```
-
-**Eva model：**
-
-```bash
-python eva_model.py -p1 ../eva/ex1/picture/AUC_3fold_layout_2 -p2 ../eva/ex1/table/sub_3fold.xlsx -l 2 -v --verbose
-```
-
-
-
-## 3、PatchECG is Highly Scalable
-
-**Ours-projection** ：
-
-/PatchECG/src/code_v5_projection.py
-
-**Ours-ECGFounder** ：
-
-/baseline/ECGFounder/PatchEncoder
-
-## Reference
-
-We appreciate your citations if you find our paper related and useful to your research!
-
-```
-@article{zhang2025masked,
-  title={Masked Training for Robust Arrhythmia Detection from Digitalized Multiple Layout ECG Images},
-  author={Zhang, Shanwei and Zhang, Deyun and Tao, Yirao and Wang, Kexin and Geng, Shijia and Li, Jun and Zhao, Qinghao and Liu, Xingpeng and Zhou, Yuxi and Hong, Shenda},
-  journal={arXiv preprint arXiv:2508.09165},
-  year={2025}
-}
-```
-
-
-
 
